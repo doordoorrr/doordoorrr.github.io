@@ -1,2128 +1,1553 @@
-
-<!--- Notes ---
-
-- This profile uses custom colors, meaning you can change the colors to your liking.
-- Use ctrl+f to find and replace each color
-- Primary Color: #AB93EB
-- Secondary Color: #634B99
-- Side Card, Title: #6B52B8
-- Side Card, Semi-Transparent Box: 64, 35, 147
-
-- Rules and more info: https://toyhou.se/~forums/16.htmlcss-graphics/39007.-free-html-templates
-
---------------->
-
-
-<div class="container-fluid">
-    <div class="row no-gutters">
-      
-      
-      <!---------------------- Side Card  ---------------------->
-      <div class="col-lg-3" style="padding-bottom:18px;">
-        
-        <!-- Card Art
-        
-        Empty Card background you can use
-        Monstadt and Liyue: https://www.deviantart.com/quinnyilada/art/Genshin-Impact-Template-Character-cards-869461737
-        Inazuma: https://mobile.twitter.com/KikidoGames/status/1404268219859456002
-        
-        Remember to give credit to creator -->
-        <div class="card rounded-0 pull-right" style="border:transparent; height:700px; width:390px; background-image:url(https://via.placeholder.com/390x700); background-position:center; background-size:cover; position:sticky; top:10px;">
-          
-          <div style="position:absolute; top:50px; right:20px;"> 
-            <div class="font-weight-bold text-right" style="font-size:30px; color:#6B52B8; line-height:8px; margin-bottom:15px;">
-              
-              <!-- Put Title Here
-              Adjust how many words are on each line to make it fit neatly -->
-              <p>1st Line</p> 
-              <p>2nd Line</p>
-              
-            </div>
-            
-            
-            <!-- Create as many Sub Title lines as you need to neatly fit the space-->
-            
-            <!-- Sub Title Line 1 -->
-            <div class="text-white" style="font-size:10px; background-color:#6B52B8; line-height:5px; margin-bottom:5px; padding:5px;">
-              Title of Character
-            </div>
-            <!-- End of Line 1 -->
-            
-          </div>
-          <div class="card rounded-0" style="position:absolute; background-color: rgba(64, 35, 147, 0.70); top:475px; height:50px; width:390px;">
-            <div style="position:absolute; top:-40px; left:10px;">
-              <ul class="list-unstyled"><li>
-                <span>
-                  
-                  <!-- Element Symbol
-                  Images can be found on Genshin Wikia -->
-                  <img src="https://i.imgur.com/WQsBI9s.png" style="width:50px; padding-bottom:25px;">
-                  
-                </span>
-                <span class="text-white text-uppercase" style="text-shadow: 0px 0px 10px #464646; font-size:50px;">
-                  
-                  <!-- Put Name Here 
-                  If full name is too long, use only first name -->
-                  Chara Name
-                  
-                </span>
-              </li></ul>
-            </div>
-          </div>
-          
-          <!---------------- Navigation Buttons  ---------------->
-          <div style="position:absolute; bottom:0px; left:50%; transform:translate(-50%);">
-            <div class="row justify-content-center" style="width:390px;">
-              
-              <a class="col-2 card card-block rounded-0 align-items-center justify-content-center mb-2 tooltipster" style="border-color:#AB93EB; border-width:2px; text-decoration:none;" href="#ABOUT" title="About">
-                <i class="fa-solid fa-user" style="color:#AB93EB; font-size:20px;"></i>
-              </a>
-              
-              <a class="col-2 card card-block rounded-0 align-items-center justify-content-center mb-2 tooltipster" style="border-color:#AB93EB; border-width:2px; text-decoration:none; margin-left:10px;" href="#TALENT" title="Talent">
-                <i class="fa-solid fa-wand-magic-sparkles" style="color:#AB93EB; font-size:20px;"></i>
-              </a>
-              
-              <a class="col-2 card card-block rounded-0 align-items-center justify-content-center mb-2 tooltipster" style="border-color:#AB93EB; border-width:2px; text-decoration:none; margin-left:10px;" href="#EQUIP" title="Equipment">
-                <i class="fa-solid fa-helmet-battle" style="color:#AB93EB; font-size:20px;"></i>
-              </a>
-              
-              <a class="col-2 card card-block rounded-0 align-items-center justify-content-center mb-2 tooltipster" style="border-color:#AB93EB; border-width:2px; text-decoration:none; margin-left:10px;" href="#STORY" title="Story">
-                <i class="fa-solid fa-scroll" style="color:#AB93EB; font-size:20px;"></i>
-              </a>
-              
-              <a class="col-2 card card-block rounded-0 align-items-center justify-content-center mb-2 tooltipster" style="border-color:#AB93EB; border-width:2px; text-decoration:none; margin-left:10px;" href="#VOICE" title="Voicelines">
-                <i class="fa-solid fa-comment" style="color:#AB93EB; font-size:20px;"></i>
-              </a>
-              
-            </div>
-          </div>
-          <!-------------- Navigation Buttons End  -------------->
-          
-          <!-- Card Background Credit -->
-          <a class="tooltipster" href="LINK" style="position:absolute; bottom:-20px; right:0px; color:#AB93EB;" title="card background by NAME">
-            <i class="fa-solid fa-image"></i>
-          </a>
-          
-          <!-- Artist Credit -->
-          <a class="tooltipster" href="LINK" style="position:absolute; bottom:-20px; right:20px; color:#AB93EB;" title="art by NAME">
-            <i class="fa-solid fa-paintbrush"></i>
-          </a>
-          
-        </div>
-      </div>
-      <!--------------------- Side Card End --------------------->
-      
-      
-      <div class="col-lg-9">
-        <div class="row no-gutters">
-          
-          
-          <!----------------------- Basics ----------------------->
-          <div class="col-lg-4">
-            <a name="ABOUT"></a>
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <div class="row">
-                <div class="col-md-4 text-center">
-                  
-                  <!-- Put Profile Image Here -->
-                  <img src="https://via.placeholder.com/150x180">
-                  
-                  
-                </div>
-                <div class="col-md-8 d-flex align-items-center">
-                  <ul class="list-unstyled font-weight-light">
-                    <li style="font-size:40px;">
-                      
-                      <!-- Put Name Here -->
-                      Name
-                      
-                    </li>
-                    <li style="font-size:25px;">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    
-                    <!-- Change to fa-regular instead of fa-solid if they are 4 star -->
-                    <i class="fa-solid fa-star"></i>
-                    
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-3">
-                  <span style="font-size:30px;">
-                    
-                    <!-- Put Level Here -->
-                    Level 81/90
-                    
-                  </span>
-                  <span class="pull-right align-self-bottom" style="font-size:15px; margin-top:15px;">
-                    
-                    <!-- EXP -->
-                    50569/216225
-                    
-                  </span>
-                  
-                  <!-- EXP Bar -->
-                  <div class="progress rounded-0"><div class="progress-bar" style="width:23%; background-color:#AB93EB;"></div></div>
-                  
-                </li>
-                <li class="mb-3" style="font-size:25px;">
-                  <span><i class="fa-regular fa-user fa-fw"></i></span>
-                  <span class="mb-0 text-uppercase"> 
-                    Age
-                  </span>
-                  <span class="pull-right font-italic mb-0">
-                    
-                    <!-- Put Age Here -->
-                    Age
-                    
-                  </span>
-                  <div style="height:1px; width:100%; background-color:#AB93EB;"></div>
-                </li>
-                <li class="mb-3" style="font-size:25px;">
-                  <span><i class="fa-regular fa-venus-mars fa-fw"></i></span>
-                  <span class="mb-0 text-uppercase"> 
-                    Gender
-                  </span>
-                  <span class="pull-right font-italic mb-0">
-                    
-                    <!-- Put Gender Here -->
-                    Gender
-                    
-                  </span>
-                  <div style="height:1px; width:100%; background-color:#AB93EB;"></div>
-                </li>
-                <li class="mb-3" style="font-size:25px;">
-                  <span><i class="fa-regular fa-comment-check fa-fw"></i></span>
-                  <span class="mb-0 text-uppercase"> 
-                    Pronouns
-                  </span>
-                  <span class="pull-right font-italic mb-0">
-                    
-                    <!-- Put Pronouns Here -->
-                    Pronouns
-                    
-                  </span>
-                  <div style="height:1px; width:100%; background-color:#AB93EB;"></div>
-                </li>
-                <li class="mb-3" style="font-size:25px;">
-                  <span><i class="fa-regular fa-calendar fa-fw"></i></span>
-                  <span class="mb-0 text-uppercase"> 
-                    Birthday
-                  </span>
-                  <span class="pull-right font-italic mb-0">
-                    
-                    <!-- Put Birthday Here -->
-                    Birthday
-                    
-                  </span>
-                  <div style="height:1px; width:100%; background-color:#AB93EB;"></div>
-                </li>
-                <li class="mb-3" style="font-size:25px;">
-                  <span><i class="fa-regular fa-map fa-fw"></i></span>
-                  <span class="mb-0 text-uppercase"> 
-                    Region
-                  </span>
-                  <span class="pull-right font-italic mb-0">
-                    
-                    <!-- Put Region Here -->
-                    Region
-                    
-                  </span>
-                  <div style="height:1px; width:100%; background-color:#AB93EB;"></div>
-                </li>
-                <li class="mb-3" style="font-size:25px;">
-                  <span><i class="fa-regular fa-swords fa-fw"></i></span>
-                  <span class="mb-0 text-uppercase"> 
-                    Weapon
-                  </span>
-                  <span class="pull-right font-italic mb-0">
-                    
-                    <!-- Put Weapon Here -->
-                    Weapon
-                    
-                  </span>
-                  <div style="height:1px; width:100%; background-color:#AB93EB;"></div>
-                </li>
-              </ul>
-              
-              <!-- Paragraphs: Summary -->
-              <p class="mb-1" style="text-align:justify; font-size:15px;">Id eu nisl nunc mi ipsum faucibus vitae. Faucibus nisl tincidunt eget nullam non nisi est. Cras tincidunt lobortis feugiat vivamus. Felis eget nunc lobortis mattis aliquam faucibus purus in massa.</p>
-              
-              <!-- Artist Credit -->
-              <a class="tooltipster" href="LINK" style="position:absolute; bottom:5px; right:8px; color:#AB93EB;" title="art by NAME">
-                <i class="fa-solid fa-paintbrush"></i>
-              </a>
-              
-            </div>
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <ul class="list-unstyled" style="font-size:25px;">
-                
-                
-                <!---------- Extrovert vs Introvert ------------->
-                <li class="mb-3">
-                  <span class="mb-2" style="color:#AB93EB;">
-                    Extrovert
-                  </span>
-                  <span class="pull-right" style="color:#634B99;">
-                    Introvert
-                  </span>
-                  
-                  <!-- Bar -->
-                  <div class="progress rounded-0 mt-1" style="background-color:#634B99; height:10px;"><div class="progress-bar rounded-0" style="width:50%; background-color:#AB93EB;"></div></div>
-                  
-                </li>
-                
-                
-                <!---------- Intuitive vs Observant ------------->
-                <li class="mb-3">
-                  <span class="mb-2" style="color:#AB93EB;">
-                    Intuitive
-                  </span>
-                  <span class="pull-right" style="color:#634B99;">
-                    Observant
-                  </span>
-                  
-                  <!-- Bar -->
-                  <div class="progress rounded-0 mt-1" style="background-color:#634B99; height:10px;"><div class="progress-bar rounded-0" style="width:50%; background-color:#AB93EB;"></div></div>
-                  
-                </li>
-                
-                
-                <!------------ Thinking vs Feeling --------------->
-                <li class="mb-3">
-                  <span class="mb-2" style="color:#AB93EB;">
-                    Thinking
-                  </span>
-                  <span class="pull-right" style="color:#634B99;">
-                    Feeling
-                  </span>
-                  
-                  <!-- Bar -->
-                  <div class="progress rounded-0 mt-1" style="background-color:#634B99; height:10px;"><div class="progress-bar rounded-0" style="width:50%; background-color:#AB93EB;"></div></div>
-                  
-                </li>
-                
-                
-                <!---------- Jugdging vs Prospecting ------------->
-                <li class="mb-3">
-                  <span class="mb-2" style="color:#AB93EB;">
-                    Jugdging
-                  </span>
-                  <span class="pull-right" style="color:#634B99;">
-                    Prospecting
-                  </span>
-                  
-                  <!-- Bar -->
-                  <div class="progress rounded-0 mt-1" style="background-color:#634B99; height:10px;"><div class="progress-bar rounded-0" style="width:50%; background-color:#AB93EB;"></div></div>
-                  
-                </li>
-                
-              </ul>
-            </div>
-          </div>
-          <!--------------------- Basics End --------------------->
-          
-          
-          <!----------------------- About ----------------------->
-          <div class="col-lg-8">
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <p class="text-center mb-2" style="font-size:40px;"><i class="fa-regular fa-sparkles"></i> About <i class="fa-regular fa-sparkles fa-rotate-180"></i></p>
-              <div style="height:2px; width:100%; background-color:#AB93EB;"></div>
-              <div class="text-center mb-2">
-                <span style="font-size:30px;"><i class="fa-regular fa-quote-left"></i></span>
-                <span style="font-size:20px; margin-left:5px; margin-right:5px;">
-                  
-                  <!-- Put Quote Here -->
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  
-                </span>
-                <span style="font-size:30px;"><i class="fa-regular fa-quote-right"></i></span>
-              </div>
-              
-              <!-- Paragraphs: About -->
-              <p class="mb-1" style="text-align:justify; font-size:15px;">Vestibulum cursus nisi at nunc lobortis vestibulum. Aliquam at ultricies turpis. Phasellus orci nulla, lacinia pharetra vehicula quis, egestas eget elit. Duis a suscipit ligula, quis rhoncus turpis. Suspendisse potenti. Nunc luctus finibus scelerisque. Duis lacus lectus, tincidunt et est ut, mattis accumsan dui. Fusce aliquet tortor et interdum interdum. Cras et iaculis magna. Integer placerat ut mauris ac ultricies. Vivamus hendrerit consectetur nulla, ac vestibulum metus tristique sit amet. Morbi vitae placerat diam. Vestibulum maximus ante vitae ex facilisis semper. Duis et augue feugiat, placerat ligula non, gravida leo.</p>
-              <p class="mb-1" style="text-align:justify; font-size:15px;">Integer lacinia odio at erat fringilla ornare. Vestibulum odio dui, lobortis ut iaculis vitae, viverra sit amet purus. Mauris non lectus quis ex ornare ornare. Curabitur sagittis erat sit amet metus dapibus, sed vehicula nunc consectetur. In blandit fringilla mauris ut ultrices. Aenean in egestas ligula. Mauris nisl leo, vulputate at vehicula a, auctor eu sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-              
-            </div>
-            <div class="row no-gutters">
-              
-              <!------------------- Pos Traits ------------------->
-              <div class="col-md-6">
-                <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-                  <p style="font-size:30px;"><i class="fa-regular fa-thumbs-up"></i> Positive Traits</p>
-                  <div style="height:2px; width:100%; background-color:#AB93EB;"></div>
-                  <ul class="list-unstyled mt-2" style="font-size:15px;">
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Praesent vestibulum aliquet
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Fusce mattis dignissim
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Etiam tellus
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Vehicula bibendum dolor
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Dapibus auctor et rhoncus
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Aenean id orci a enim
-                        
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!----------------- Pos Traits End ----------------->
-              
-              
-              <!------------------- Neg Traits ------------------->
-              <div class="col-md-6">
-                <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-                  <p style="font-size:30px;"><i class="fa-regular fa-thumbs-down"></i> Negative Traits</p>
-                  <div style="height:2px; width:100%; background-color:#AB93EB;"></div>
-                  <ul class="list-unstyled mt-2" style="font-size:15px;">
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Praesent vestibulum aliquet
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Fusce mattis dignissim
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Etiam tellus
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Vehicula bibendum dolor
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Dapibus auctor et rhoncus
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Aenean id orci a enim
-                        
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!----------------- Neg Traits End ----------------->
-              
-              
-              <!--------------------- Likes --------------------->
-              <div class="col-md-6">
-                <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-                  <p style="font-size:30px;"><i class="fa-regular fa-check"></i> Likes</p>
-                  <div style="height:2px; width:100%; background-color:#AB93EB;"></div>
-                  <ul class="list-unstyled mt-2" style="font-size:15px;">
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Praesent vestibulum aliquet
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Fusce mattis dignissim
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Etiam tellus
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Vehicula bibendum dolor
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Dapibus auctor et rhoncus
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Aenean id orci a enim
-                        
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!------------------- Likes End ------------------->
-              
-              
-              <!-------------------- Dislikes -------------------->
-              <div class="col-md-6">
-                <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-                  <p style="font-size:30px;"><i class="fa-regular fa-times"></i> Dislikes</p>
-                  <div style="height:2px; width:100%; background-color:#AB93EB;"></div>
-                  <ul class="list-unstyled mt-2" style="font-size:15px;">
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Praesent vestibulum aliquet
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Fusce mattis dignissim
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Etiam tellus
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Vehicula bibendum dolor
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Dapibus auctor et rhoncus
-                        
-                      </span>
-                    </li>
-                    <li class="mb-2">
-                      <span><i class="fa-regular fa-arrow-right"></i></span>
-                      <span>
-                        
-                        Aenean id orci a enim
-                        
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!------------------ Dislikes End ------------------>
-              
-            </div>
-          </div>
-          <!---------------------- About End ---------------------->
-          
-          
-          <!---------------------- Appearance ---------------------->
-          <div class="col-lg-7">
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <p class="mb-2" style="font-size:30px;">
-                <span><i class="fa-regular fa-tshirt"></i></span>
-                <span>Appearance</span> 
-              </p>
-              <div class="mb-2" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-              
-              <!-- Paragraphs: Appearance -->
-              <p class="mb-1" style="text-align:justify; font-size:15px;">Vestibulum cursus nisi at nunc lobortis vestibulum. Aliquam at ultricies turpis. Phasellus orci nulla, lacinia pharetra vehicula quis, egestas eget elit. Duis a suscipit ligula, quis rhoncus turpis. Suspendisse potenti. Nunc luctus finibus scelerisque. Duis lacus lectus, tincidunt et est ut, mattis accumsan dui. Fusce aliquet tortor et interdum interdum. Cras et iaculis magna. Integer placerat ut mauris ac ultricies. Vivamus hendrerit consectetur nulla, ac vestibulum metus tristique sit amet. Morbi vitae placerat diam. Vestibulum maximus ante vitae ex facilisis semper. Duis et augue feugiat, placerat ligula non, gravida leo.</p>
-              <p class="mb-1" style="text-align:justify; font-size:15px;">Integer lacinia odio at erat fringilla ornare. Vestibulum odio dui, lobortis ut iaculis vitae, viverra sit amet purus. Mauris non lectus quis ex ornare ornare. Curabitur sagittis erat sit amet metus dapibus, sed vehicula nunc consectetur. In blandit fringilla mauris ut ultrices. Aenean in egestas ligula. Mauris nisl leo, vulputate at vehicula a, auctor eu sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            </div>
-          </div>
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              
-              <!-- There are 2 color HEX's for each type
-              First id the actual color, and the 2nd a lighter/darker version for outline
-              Outline is to help with visibility across different themes -->
-              
-              <ul class="list-unstyled mb-0">
-                <li class="mb-3" style="font-size:30px;">
-                  <span><i class="fa-regular fa-droplet fa-fw"></i></span>
-                  <span class="mb-0 text-uppercase"> 
-                    Hair
-                  </span>
-                  
-                  <!-- Replace Color HEX -->
-                  <span class="pull-right font-italic mb-0" style="color:#939393; text-shadow: 1px 1px 1px #585858;">
-                    
-                    <!-- Put Hair Color Here -->
-                    #939393
-                    
-                  </span>
-                  <div class="mt-2" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-                </li>
-                <li class="mb-3" style="font-size:30px;">
-                  <span><i class="fa-regular fa-eye fa-fw"></i></span>
-                  <span class="mb-0 text-uppercase"> 
-                    Eye
-                  </span>
-                  
-                  <!-- Replace Color HEX -->
-                  <span class="pull-right font-italic mb-0" style="color:#939393; text-shadow: 1px 1px 1px #585858;">
-                    
-                    <!-- Put Eye Color Here -->
-                    #939393
-                    
-                  </span>
-                  <div class="mt-2" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-                </li>
-                <li class="mb-3" style="font-size:30px;">
-                  <span><i class="fa-regular fa-hand fa-fw"></i></span>
-                  <span class="mb-0 text-uppercase"> 
-                    Skin
-                  </span>
-                  
-                  <!-- Replace Color HEX -->
-                  <span class="pull-right font-italic mb-0" style="color:#939393; text-shadow: 1px 1px 1px #585858;">
-                    
-                    <!-- Put Skin Color Here -->
-                    #939393
-                    
-                  </span>
-                  <div class="mt-2" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-                </li>
-                <li class="mb-3" style="font-size:30px;">
-                  <span><i class="fa-regular fa-palette fa-fw"></i></span>
-                  <span class="mb-0 text-uppercase"> 
-                    Color
-                  </span>
-                  
-                  <!-- Replace Color HEX -->
-                  <span class="pull-right font-italic mb-0" style="color:#939393; text-shadow: 1px 1px 1px #585858;">
-                    
-                    <!-- Put Main Color Here -->
-                    #939393
-                    
-                  </span>
-                  <div class="mt-2" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-------------------- Appearance End -------------------->
-          
-          
-          <!--------------------- Design Notes --------------------->
-          <div class="col-lg-6">
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <p class="mb-2" style="font-size:30px;">
-                <span><i class="fa-regular fa-list"></i></span>
-                <span>Design Notes</span> 
-              </p>
-              <div class="mb-2" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-              <ul class="list-unstyled mt-2" style="font-size:15px;">
-                <li class="mb-2">
-                  <span><i class="fa-regular fa-arrow-right"></i></span>
-                  <span>
-                    
-                    Sed ac ligula consectetur, feugiat mi ac, eleifend nisl. Nam scelerisque convallis euismod. Nam tincidunt risus eget blandit luctus.
-                    
-                  </span>
-                </li>
-                <li class="mb-2">
-                  <span><i class="fa-regular fa-arrow-right"></i></span>
-                  <span>
-                    
-                    Etiam consequat viverra ex, ut hendrerit dolor auctor in. Integer feugiat feugiat molestie.
-                    
-                  </span>
-                </li>
-                <li class="mb-2">
-                  <span><i class="fa-regular fa-arrow-right"></i></span>
-                  <span>
-                    
-                    Nullam mollis pharetra ipsum nec ultricies.
-                    
-                  </span>
-                </li>
-                <li class="mb-2">
-                  <span><i class="fa-regular fa-arrow-right"></i></span>
-                  <span>
-                    
-                    Maecenas aliquet porttitor vehicula. Donec tristique porta arcu nec cursus.
-                    
-                  </span>
-                </li>
-                <li class="mb-2">
-                  <span><i class="fa-regular fa-arrow-right"></i></span>
-                  <span>
-                    
-                    Ut malesuada lectus laoreet lorem pulvinar, in suscipit erat lacinia.
-                    
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!------------------- Design Notes End ------------------->
-          
-          
-          <!------------------------ Trivia ------------------------>
-          <div class="col-lg-6">
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <p class="mb-2" style="font-size:30px;">
-                <span><i class="fa-regular fa-list"></i></span>
-                <span>Trivia</span> 
-              </p>
-              <div class="mb-2" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-              <ul class="list-unstyled mt-2" style="font-size:15px;">
-                <li class="mb-2">
-                  <span><i class="fa-regular fa-arrow-right"></i></span>
-                  <span>
-                    
-                    Sed ac ligula consectetur, feugiat mi ac, eleifend nisl. Nam scelerisque convallis euismod. Nam tincidunt risus eget blandit luctus.
-                    
-                  </span>
-                </li>
-                <li class="mb-2">
-                  <span><i class="fa-regular fa-arrow-right"></i></span>
-                  <span>
-                    
-                    Etiam consequat viverra ex, ut hendrerit dolor auctor in. Integer feugiat feugiat molestie.
-                    
-                  </span>
-                </li>
-                <li class="mb-2">
-                  <span><i class="fa-regular fa-arrow-right"></i></span>
-                  <span>
-                    
-                    Nullam mollis pharetra ipsum nec ultricies.
-                    
-                  </span>
-                </li>
-                <li class="mb-2">
-                  <span><i class="fa-regular fa-arrow-right"></i></span>
-                  <span>
-                    
-                    Maecenas aliquet porttitor vehicula. Donec tristique porta arcu nec cursus.
-                    
-                  </span>
-                </li>
-                <li class="mb-2">
-                  <span><i class="fa-regular fa-arrow-right"></i></span>
-                  <span>
-                    
-                    Ut malesuada lectus laoreet lorem pulvinar, in suscipit erat lacinia.
-                    
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!----------------------- Trivia End ----------------------->
-          
-          
-          <!-------------------- Custom Splash Art -------------------->
-          <!----- This section will be HIDDEN on smaller screens ----->
-          <div class="col-12 d-none d-lg-block">
-            <div class="card rounded-0" style="border:transparent; height:auto; width:1096px; background-image:url(https://i.imgur.com/0KzmkES.png); background-position:center; background-size:cover; margin-left:10px; margin-bottom:10px;">
-              
-              <!-- Put Character Splash Art Here
-              Recommended to be 600px tall -->
-              <img src="https://via.placeholder.com/600" style="height:600px; object-fit:contain;">
-              
-              <!-- Put Element Image Here -->
-              <img src="https://via.placeholder.com/100" style="width:100px; position:absolute; top:270px; left:100px;">
-              
-              <div style="position:absolute; top:300px; left:170px;">
-                <p class="text-white mb-0" style="font-size:40px; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
-                  
-                  <!-- Put Name Here -->
-                  Character Name
-                  
-                </p>
-                <p style="font-size:20px; color:#FFCC32; text-shadow: 0px 0px 10px #1A1A1A;">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  
-                  <!-- Remove if they are a 4 star -->
-                  <i class="fa-solid fa-star"></i>
-                  
-                </p>
-              </div>
-              
-              <!-- Background Credit -->
-              <a class="tooltipster" href="https://twitter.com/yumisarat/status/1330198161248411648" style="position:absolute; bottom:5px; right:10px; color:#8C909F;" title="background by Yumisarat">
-                <i class="fa-solid fa-image"></i>
-              </a>
-              
-              <!-- Artist Credit -->
-              <a class="tooltipster" href="LINK" style="position:absolute; bottom:5px; right:30px; color:#8C909F;" title="art by NAME">
-                <i class="fa-solid fa-paintbrush"></i>
-              </a>
-              
-            </div>
-          </div>
-          <!------------------- Custom Splash Art End ------------------->
-          
-          <div class="col-lg-7">
-            <a name="TALENT"></a>
-            
-            <!---------------------- Normal Attack ---------------------->
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <div class="mb-1">
-                <span style="font-size:25px;">
-                  
-                  <!-- Skill Name -->
-                  Skill Name
-                  
-                </span>
-                <span class="pull-right" style="font-size:20px; margin-top:5px;">
-                  Normal Attack
-                </span>
-              </div>
-              <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-              
-              <!-- Normal Attack -->
-              <p class="mb-1 font-weight-bold" style="font-size:15px; color:#634B99;">Normal Attack</p>
-              <p class="mb-1" style="text-align:justify; font-size:15px;">Nunc consequat interdum varius sit amet mattis vulputate enim.</p>
-              
-              <!-- Charged Attack -->
-              <p class="mb-1 mt-2 font-weight-bold" style="font-size:15px; color:#634B99;">Charged Attack</p>
-              <p class="mb-1" style="text-align:justify; font-size:15px;">Nunc sed id semper risus in hendrerit gravida. Eu mi bibendum neque egestas.</p>
-              
-              <!-- Plunging Attack -->
-              <p class="mb-1 mt-2 font-weight-bold" style="font-size:15px; color:#634B99;">Plunging Attack</p>
-              <p class="mb-1" style="text-align:justify; font-size:15px;">Facilisis magna etiam tempor orci eu. Orci eu lobortis elementum nibh tellus molestie nunc non blandit. Dignissim enim sit amet venenatis urna cursus eget nunc.</p>
-              
-            </div>
-            <!-------------------- Normal Attack End -------------------->
-            
-            
-            <!--------------------- Elemental Skill --------------------->
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <div class="mb-1">
-                <span style="font-size:25px;">
-                  
-                  <!-- Skill Name -->
-                  Skill Name
-                  
-                </span>
-                <span class="pull-right" style="font-size:20px; margin-top:5px;">
-                  Elemental Skill
-                </span>
-              </div>
-              <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-              
-              <!-- Skill Paragraph -->
-              <p class="mb-1" style="text-align:justify; font-size:15px;">When talking about elemental dmg type, make it <b>bold</b>. When mentioning the name of a skill, make it bold and use the <b style="color:#634B99;">secondary</b> color. Of course, these are only recommendations and you can do as you like. Mix and match paragraphs, sub titles, and lists as you see fit.</p>
-              
-              <!-- Sub Title -->
-              <p class="mb-1 mt-2 font-weight-bold" style="font-size:15px; color:#634B99;">Sub Title</p>
-              
-              <!-------- List -------->
-              <ul class="list-unstyled" style="font-size:15px;">
-                <li class="mb-2">
-                  <span><i class="fa-regular fa-arrow-right"></i></span>
-                  <span>
-                    
-                    For when you need a list in your description
-                    
-                  </span>
-                </li>
-                <li class="mb-2">
-                  <span><i class="fa-regular fa-arrow-right"></i></span>
-                  <span>
-                    
-                    Second bullet point
-                    
-                  </span>
-                </li>
-              </ul>
-              <!------ List End ------>
-              
-              <!-- Skill Paragraph -->
-              <p class="mb-1" style="text-align:justify; font-size:15px;">Sollicitudin tempor id eu nisl nunc mi. Blandit libero volutpat sed cras ornare arcu. Id aliquet risus feugiat in ante. Nulla facilisi cras fermentum odio. Risus feugiat in ante metus dictum at tempor commodo.</p>
-              
-            </div>
-            <!------------------- Elemental Skill End ------------------->
-            
-            
-            <!--------------------- Elemental Burst --------------------->
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <div class="mb-1">
-                <span style="font-size:25px;">
-                  
-                  <!-- Skill Name -->
-                  Skill Name
-                  
-                </span>
-                <span class="pull-right" style="font-size:20px; margin-top:5px;">
-                  Elemental Burst
-                </span>
-              </div>
-              <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-              
-              <!-- Skill Paragraph -->
-              <p class="mb-1" style="text-align:justify; font-size:15px;">Venenatis cras sed felis eget velit aliquet sagittis id. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Maecenas pharetra convallis posuere morbi leo urna.</p>
-              <p class="mb-1" style="text-align:justify; font-size:15px;">Tempor commodo ullamcorper a lacus vestibulum sed arcu non. In est ante in nibh. Ut tortor pretium viverra suspendisse. Est ultricies integer quis auctor elit. Fermentum leo vel orci porta non pulvinar neque laoreet suspendisse.</p>
-              
-            </div>
-            <!------------------- Elemental Burst End ------------------->
-            
-            
-            <!-------------------- 1st Passive Talent -------------------->
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <div class="mb-1">
-                <span style="font-size:25px;">
-                  
-                  <!-- Skill Name -->
-                  Skill Name
-                  
-                </span>
-                <span class="pull-right" style="font-size:20px; margin-top:5px;">
-                  1st Ascension Passive
-                </span>
-              </div>
-              <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-              
-              <!-- Skill Paragraph -->
-              <p class="mb-1" style="text-align:justify; font-size:15px;">Aenean et tortor at risus viverra adipiscing. Vitae nunc sed velit dignissim sodales ut.</p>
-              
-            </div>
-            <!------------------ 1st Passive Talent End ------------------>
-            
-            
-            <!-------------------- 2nd Passive Talent -------------------->
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <div class="mb-1">
-                <span style="font-size:25px;">
-                  
-                  <!-- Skill Name -->
-                  Skill Name
-                  
-                </span>
-                <span class="pull-right" style="font-size:20px; margin-top:5px;">
-                  4th Ascension Passive
-                </span>
-              </div>
-              <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-              
-              <!-- Skill Paragraph -->
-              <p class="mb-1" style="text-align:justify; font-size:15px;">Aenean et tortor at risus viverra adipiscing. Vitae nunc sed velit dignissim sodales ut.</p>
-              
-            </div>
-            <!------------------ 2nd Passive Talent End ------------------>
-            
-            
-            <!---------------------- Utility Passive ---------------------->
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <div class="mb-1">
-                <span style="font-size:25px;">
-                  
-                  <!-- Skill Name -->
-                  Skill Name
-                  
-                </span>
-                <span class="pull-right" style="font-size:20px; margin-top:5px;">
-                  Utility Passive
-                </span>
-              </div>
-              <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-              
-              <!-- Skill Paragraph -->
-              <p class="mb-1" style="text-align:justify; font-size:15px;">Aenean et tortor at risus viverra adipiscing. Vitae nunc sed velit dignissim sodales ut.</p>
-              
-            </div>
-            <!-------------------- Utility Passive End -------------------->
-            
-          </div>
-          <div class="col-lg-5">
-            
-            
-            <!---------------------- Constellation 1 ---------------------->
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <div class="row">
-                <div class="col-2">
-                  <div class="card card-block rounded-circle align-items-center justify-content-center mb-2" style="width:50px; height:50px; border-color:#AB93EB; border-width:2px;">
-                    <p style="font-size:25px; color:#AB93EB;">C1</p>
-                  </div>
-                </div>
-                <div class="col-10">
-                  <p class="mb-1" style="font-size:20px;">
-                    
-                    <!-- C1 Title -->
-                    Constellation 1
-                    
-                  </p>
-                  <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-                  
-                  <!-- C1 Paragraph -->
-                  <p style="text-align:justify; font-size:15px;">Aenean et tortor at risus viverra adipiscing. Vitae nunc sed velit dignissim sodales ut.</p>
-                  
-                </div>
-              </div>
-            </div>
-            <!-------------------- Constellation 1 End -------------------->
-            
-            
-            <!---------------------- Constellation 2 ---------------------->
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <div class="row">
-                <div class="col-2">
-                  <div class="card card-block rounded-circle align-items-center justify-content-center mb-2" style="width:50px; height:50px; border-color:#AB93EB; border-width:2px;">
-                    <p style="font-size:25px; color:#AB93EB;">C2</p>
-                  </div>
-                </div>
-                <div class="col-10">
-                  <p class="mb-1" style="font-size:20px;">
-                    
-                    <!-- C2 Title -->
-                    Constellation 2
-                    
-                  </p>
-                  <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-                  
-                  <!-- C2 Paragraph -->
-                  <p style="text-align:justify; font-size:15px;">Aenean et tortor at risus viverra adipiscing. Vitae nunc sed velit dignissim sodales ut.</p>
-                  
-                </div>
-              </div>
-            </div>
-            <!---------------------- Constellation 2 ---------------------->
-            
-            
-            <!---------------------- Constellation 3 ---------------------->
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <div class="row">
-                <div class="col-2">
-                  <div class="card card-block rounded-circle align-items-center justify-content-center mb-2" style="width:50px; height:50px; border-color:#AB93EB; border-width:2px;">
-                    <p style="font-size:25px; color:#AB93EB;">C3</p>
-                  </div>
-                </div>
-                <div class="col-10">
-                  <p class="mb-1" style="font-size:20px;">
-                    
-                    <!-- C3 Title -->
-                    Constellation 3
-                    
-                  </p>
-                  <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-                  
-                  <!-- C3 Paragraph -->
-                  <p style="text-align:justify; font-size:15px;">Increases the Level of <b style="color:#634B99;">Skill or Burst</b> by 3.</p>
-                  
-                </div>
-              </div>
-            </div>
-            <!---------------------- Constellation 3 ---------------------->
-            
-            
-            <!---------------------- Constellation 4 ---------------------->
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <div class="row">
-                <div class="col-2">
-                  <div class="card card-block rounded-circle align-items-center justify-content-center mb-2" style="width:50px; height:50px; border-color:#AB93EB; border-width:2px;">
-                    <p style="font-size:25px; color:#AB93EB;">C4</p>
-                  </div>
-                </div>
-                <div class="col-10">
-                  <p class="mb-1" style="font-size:20px;">
-                    
-                    <!-- C4 Title -->
-                    Constellation 4
-                    
-                  </p>
-                  <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-                  
-                  <!-- C4 Paragraph -->
-                  <p style="text-align:justify; font-size:15px;">Aenean et tortor at risus viverra adipiscing. Vitae nunc sed velit dignissim sodales ut.</p>
-                  
-                </div>
-              </div>
-            </div>
-            <!---------------------- Constellation 4 ---------------------->
-            
-            
-            <!---------------------- Constellation 5 ---------------------->
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <div class="row">
-                <div class="col-2">
-                  <div class="card card-block rounded-circle align-items-center justify-content-center mb-2" style="width:50px; height:50px; border-color:#AB93EB; border-width:2px;">
-                    <p style="font-size:25px; color:#AB93EB;">C5</p>
-                  </div>
-                </div>
-                <div class="col-10">
-                  <p class="mb-1" style="font-size:20px;">
-                    
-                    <!-- C5 Title -->
-                    MConstellation 5
-                    
-                  </p>
-                  <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-                  
-                  <!-- C5 Paragraph -->
-                  <p style="text-align:justify; font-size:15px;">Increases the Level of <b style="color:#634B99;">Skill or Burst</b> by 3.</p>
-                  
-                </div>
-              </div>
-            </div>
-            <!---------------------- Constellation 5 ---------------------->
-            
-            
-            <!---------------------- Constellation 6 ---------------------->
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <div class="row">
-                <div class="col-2">
-                  <div class="card card-block rounded-circle align-items-center justify-content-center mb-2" style="width:50px; height:50px; border-color:#AB93EB; border-width:2px;">
-                    <p style="font-size:25px; color:#AB93EB;">C6</p>
-                  </div>
-                </div>
-                <div class="col-10">
-                  <p class="mb-1" style="font-size:20px;">
-                    
-                    <!-- C6 Title -->
-                    Constellation 6
-                    
-                  </p>
-                  <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-                  
-                  <!-- C6 Paragraph -->
-                  <p style="text-align:justify; font-size:15px;">Aenean et tortor at risus viverra adipiscing. Vitae nunc sed velit dignissim sodales ut.</p>
-                  
-                </div>
-              </div>
-            </div>
-            <!---------------------- Constellation 6 ---------------------->
-            
-            <div class="card" style="border:transparent; margin-left:10px;">
-              
-              <!-- Put Image Here -->
-              <img class="rounded-0" src="https://via.placeholder.com/400">
-              
-              <!-- Artist Credit -->
-              <a class="tooltipster" href="LINK" style="position:absolute; bottom:5px; right:8px; color:#AB93EB;" title="art by NAME">
-                <i class="fa-thin fa-paintbrush"></i>
-              </a>
-              
-            </div>
-          </div>
-          
-          
-          <!--------------------- Equipment: Weapon --------------------->
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <a name="EQUIP"></a>
-            <div class="card card-block bg-faded rounded-0" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <div class="row">
-                <div class="col-md-5 d-flex align-items-center justify-content-center">
-                  <div class="card rounded-circle align-items-center justify-content-center mb-2" style="border-color:#AB93EB; border-width:2px;">
-                    
-                    <!-- Weapon Image
-                    Transparent images can be found on Genshin wikia -->
-                    <img src="https://traveler.gg/wp-content/uploads/Weapon_Kagura27s_Verity.png" class="rounded-circle" style="object-fit: cover">
-                    
-                  </div>
-                </div>
-                <div class="col-md-7 d-flex align-items-center">
-                  <ul class="list-unstyled font-weight-light">
-                    <li style="font-size:35px;">
-                        
-                      <!-- Weapon Name -->
-                      Weapon Name
-                      
-                    </li>
-                    <li style="font-size:20px;">
-                      
-                      <!-- Weapon Type -->
-                      Type
-                      
-                    </li>
-                    <li style="font-size:30px;">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    
-                    <!-- Change to fa-regular instead of fa-solid if they are 4 star -->
-                    <i class="fa-solid fa-star"></i>
-                    
-                    </li>
-                    
-                  </ul>
-                </div>
-              </div>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-3" style="font-size:25px;">
-                  <span><i class="fa-regular fa-swords fa-fw"></i></span>
-                  <span class="mb-0 text-uppercase"> 
-                    Base ATK
-                  </span>
-                  <span class="pull-right font-italic mb-0">
-                    
-                    <!-- Put ATK Here -->
-                    xxx
-                    
-                  </span>
-                  <div style="height:1px; width:100%; background-color:#AB93EB;"></div>
-                </li>
-                <li class="mb-3" style="font-size:25px;">
-                  <span><i class="fa-regular fa-claw-marks fa-fw"></i></span>
-                  <span class="mb-0 text-uppercase"> 
-                    
-                    <!-- Secondary Stat -->
-                    2nd Stat
-                    
-                  </span>
-                  <span class="pull-right font-italic mb-0">
-                    
-                    <!-- Put Value Here -->
-                    xxx
-                    
-                  </span>
-                  <div style="height:1px; width:100%; background-color:#AB93EB;"></div>
-                </li>
-              </ul>
-              <p class="mb-1" style="text-align:justify; font-size:20px;">
-                
-                <!-- Refinement Rank -->
-                Refinement Rank 1
-                
-              </p>
-              
-              <!-- Paragraphs: Weapon Passive -->
-              <p class="mb-1" style="text-align:justify; font-size:15px;">Interdum varius sit amet mattis vulputate enim. Tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse. In tellus integer feugiat scelerisque varius morbi enim nunc. Sapien eget mi proin sed libero enim sed faucibus turpis.</p>
-              
-              <!-- Paragraphs: Weapon Lore -->
-              <em class="mb-1 " style="text-align:justify; font-size:15px;">Duis ut diam quam nulla porttitor massa id neque aliquam. Convallis aenean et tortor at.</em>
-              
-            </div>
-          </div>
-          <!------------------- Equipment: Weapon End ------------------->
-          
-          
-          <!-------------------- Equipment: Artifacts -------------------->
-          <!--- Artifact Images can be obtained from the Genshin Wikia --->
-          <div class="col-lg-7 d-flex align-items-stretch align-items-center">
-            <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-              <div class="row justify-content-center">
-                <div class="col-md-3">
-                  <div class="card rounded-circle align-items-center justify-content-center mb-2" style="border-color:#AB93EB; border-width:2px;">
-                    
-                    <!-- Image: Flower of Life -->
-                    <img src="https://static.wikia.nocookie.net/gensin-impact/images/b/b1/Item_Gladiator%27s_Nostalgia.png" class="rounded-circle" style="object-fit: cover">
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="card rounded-circle align-items-center justify-content-center mb-2" style="border-color:#AB93EB; border-width:2px;">
-                    
-                    <!-- Image: Plume of Death -->
-                    <img src="https://static.wikia.nocookie.net/gensin-impact/images/9/94/Item_Gladiator%27s_Destiny.png" class="rounded-circle" style="object-fit: cover">
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-md-3">
-                  <div class="card rounded-circle align-items-center justify-content-center mb-2" style="border-color:#AB93EB; border-width:2px;">
-                    
-                    <!-- Image: Sands of Eon -->
-                    <img src="https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Item_Storm_Cage.png" class="rounded-circle" style="object-fit: cover">
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="card rounded-circle align-items-center justify-content-center mb-2" style="border-color:#AB93EB; border-width:2px;">
-                    
-                    <!-- Image: Goblet of Eonothem -->
-                    <img src="https://static.wikia.nocookie.net/gensin-impact/images/0/00/Item_Scarlet_Vessel.png" class="rounded-circle" style="object-fit: cover">
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="card rounded-circle align-items-center justify-content-center mb-2" style="border-color:#AB93EB; border-width:2px;">
-                    
-                    <!-- Image: Circlet of Logos -->
-                    <img src="https://static.wikia.nocookie.net/gensin-impact/images/0/04/Item_Ornate_Kabuto.png" class="rounded-circle" style="object-fit: cover">
-                    
-                  </div>
-                </div>
-              </div>
-              
-              
-              <!-----------
-              
-              Remove the 2nd set if your character uses 4 piece
-              
-              Remove 3rd line from 1st set if your character uses 2 piece
-              
-              ------------>
-              
-              <!-- Artifact Set Bonus -->
-              <p class="mb-1" style="text-align:center; font-size:30px;">Artifact Name</p>
-              <p class="mb-1" style="text-align:center; font-size:20px;">2-Piece Set: bonus.</p>
-              <p class="mb-1" style="text-align:center; font-size:20px;">4-Piece Set: probably a longer bonus description, some of them are really really realllyyyyy long for some reason.</p>
-              
-              <!-- Artifact Set Bonus -->
-              <p class="mb-1 mt-2" style="text-align:center; font-size:30px;">Artifact Name</p>
-              <p class="mb-1" style="text-align:center; font-size:20px;">2-Piece Set: bonus.</p>
-              
-              
-            </div>
-          </div>
-          <!------------------ Equipment: Artifacts End ------------------>
-          
-        </div>
-        <a name="STORY"></a>
-        
-        <!----------------------- Character Details ----------------------->
-        <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-          <p class="mb-1" style="font-size:25px;">Character Details</p>
-          <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-          
-          <!-- Paragraphs: About -->
-          <p class="mb-1" style="text-align:justify; font-size:15px;">Vestibulum cursus nisi at nunc lobortis vestibulum. Aliquam at ultricies turpis. Phasellus orci nulla, lacinia pharetra vehicula quis, egestas eget elit. Duis a suscipit ligula, quis rhoncus turpis. Suspendisse potenti. Nunc luctus finibus scelerisque. Duis lacus lectus, tincidunt et est ut, mattis accumsan dui. Fusce aliquet tortor et interdum interdum. Cras et iaculis magna. Integer placerat ut mauris ac ultricies. Vivamus hendrerit consectetur nulla, ac vestibulum metus tristique sit amet. Morbi vitae placerat diam. Vestibulum maximus ante vitae ex facilisis semper. Duis et augue feugiat, placerat ligula non, gravida leo.</p>
-          <p class="mb-1" style="text-align:justify; font-size:15px;">Integer lacinia odio at erat fringilla ornare. Vestibulum odio dui, lobortis ut iaculis vitae, viverra sit amet purus. Mauris non lectus quis ex ornare ornare. Curabitur sagittis erat sit amet metus dapibus, sed vehicula nunc consectetur. In blandit fringilla mauris ut ultrices. Aenean in egestas ligula. Mauris nisl leo, vulputate at vehicula a, auctor eu sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-          
-        </div>
-        <!--------------------- Character Details End --------------------->
-        
-        
-        <!----------------------- Character Story 1 ----------------------->
-        <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-          <p class="mb-1" style="font-size:25px;">Character Story 1</p>
-          <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-          
-          <!-- Paragraphs: About -->
-          <p class="mb-1" style="text-align:justify; font-size:15px;">Vestibulum cursus nisi at nunc lobortis vestibulum. Aliquam at ultricies turpis. Phasellus orci nulla, lacinia pharetra vehicula quis, egestas eget elit. Duis a suscipit ligula, quis rhoncus turpis. Suspendisse potenti. Nunc luctus finibus scelerisque. Duis lacus lectus, tincidunt et est ut, mattis accumsan dui. Fusce aliquet tortor et interdum interdum. Cras et iaculis magna. Integer placerat ut mauris ac ultricies. Vivamus hendrerit consectetur nulla, ac vestibulum metus tristique sit amet. Morbi vitae placerat diam. Vestibulum maximus ante vitae ex facilisis semper. Duis et augue feugiat, placerat ligula non, gravida leo.</p>
-          <p class="mb-1" style="text-align:justify; font-size:15px;">Integer lacinia odio at erat fringilla ornare. Vestibulum odio dui, lobortis ut iaculis vitae, viverra sit amet purus. Mauris non lectus quis ex ornare ornare. Curabitur sagittis erat sit amet metus dapibus, sed vehicula nunc consectetur. In blandit fringilla mauris ut ultrices. Aenean in egestas ligula. Mauris nisl leo, vulputate at vehicula a, auctor eu sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-          
-        </div>
-        <!--------------------- Character Story 1 End --------------------->
-        
-        
-        <!----------------------- Character Story 2 ----------------------->
-        <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-          <p class="mb-1" style="font-size:25px;">Character Story 2</p>
-          <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-          
-          <!-- Paragraphs: About -->
-          <p class="mb-1" style="text-align:justify; font-size:15px;">Vestibulum cursus nisi at nunc lobortis vestibulum. Aliquam at ultricies turpis. Phasellus orci nulla, lacinia pharetra vehicula quis, egestas eget elit. Duis a suscipit ligula, quis rhoncus turpis. Suspendisse potenti. Nunc luctus finibus scelerisque. Duis lacus lectus, tincidunt et est ut, mattis accumsan dui. Fusce aliquet tortor et interdum interdum. Cras et iaculis magna. Integer placerat ut mauris ac ultricies. Vivamus hendrerit consectetur nulla, ac vestibulum metus tristique sit amet. Morbi vitae placerat diam. Vestibulum maximus ante vitae ex facilisis semper. Duis et augue feugiat, placerat ligula non, gravida leo.</p>
-          <p class="mb-1" style="text-align:justify; font-size:15px;">Integer lacinia odio at erat fringilla ornare. Vestibulum odio dui, lobortis ut iaculis vitae, viverra sit amet purus. Mauris non lectus quis ex ornare ornare. Curabitur sagittis erat sit amet metus dapibus, sed vehicula nunc consectetur. In blandit fringilla mauris ut ultrices. Aenean in egestas ligula. Mauris nisl leo, vulputate at vehicula a, auctor eu sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-          
-        </div>
-        <!--------------------- Character Story 2 End --------------------->
-        
-        
-        <!----------------------- Character Story 3 ----------------------->
-        <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-          <p class="mb-1" style="font-size:25px;">Character Story 3</p>
-          <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-          
-          <!-- Paragraphs: About -->
-          <p class="mb-1" style="text-align:justify; font-size:15px;">Vestibulum cursus nisi at nunc lobortis vestibulum. Aliquam at ultricies turpis. Phasellus orci nulla, lacinia pharetra vehicula quis, egestas eget elit. Duis a suscipit ligula, quis rhoncus turpis. Suspendisse potenti. Nunc luctus finibus scelerisque. Duis lacus lectus, tincidunt et est ut, mattis accumsan dui. Fusce aliquet tortor et interdum interdum. Cras et iaculis magna. Integer placerat ut mauris ac ultricies. Vivamus hendrerit consectetur nulla, ac vestibulum metus tristique sit amet. Morbi vitae placerat diam. Vestibulum maximus ante vitae ex facilisis semper. Duis et augue feugiat, placerat ligula non, gravida leo.</p>
-          <p class="mb-1" style="text-align:justify; font-size:15px;">Integer lacinia odio at erat fringilla ornare. Vestibulum odio dui, lobortis ut iaculis vitae, viverra sit amet purus. Mauris non lectus quis ex ornare ornare. Curabitur sagittis erat sit amet metus dapibus, sed vehicula nunc consectetur. In blandit fringilla mauris ut ultrices. Aenean in egestas ligula. Mauris nisl leo, vulputate at vehicula a, auctor eu sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-          
-        </div>
-        <!--------------------- Character Story 3 End --------------------->
-        
-        
-        <!----------------------- Character Story 4 ----------------------->
-        <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-          <p class="mb-1" style="font-size:25px;">Character Story 4</p>
-          <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-          
-          <!-- Paragraphs: About -->
-          <p class="mb-1" style="text-align:justify; font-size:15px;">Vestibulum cursus nisi at nunc lobortis vestibulum. Aliquam at ultricies turpis. Phasellus orci nulla, lacinia pharetra vehicula quis, egestas eget elit. Duis a suscipit ligula, quis rhoncus turpis. Suspendisse potenti. Nunc luctus finibus scelerisque. Duis lacus lectus, tincidunt et est ut, mattis accumsan dui. Fusce aliquet tortor et interdum interdum. Cras et iaculis magna. Integer placerat ut mauris ac ultricies. Vivamus hendrerit consectetur nulla, ac vestibulum metus tristique sit amet. Morbi vitae placerat diam. Vestibulum maximus ante vitae ex facilisis semper. Duis et augue feugiat, placerat ligula non, gravida leo.</p>
-          <p class="mb-1" style="text-align:justify; font-size:15px;">Integer lacinia odio at erat fringilla ornare. Vestibulum odio dui, lobortis ut iaculis vitae, viverra sit amet purus. Mauris non lectus quis ex ornare ornare. Curabitur sagittis erat sit amet metus dapibus, sed vehicula nunc consectetur. In blandit fringilla mauris ut ultrices. Aenean in egestas ligula. Mauris nisl leo, vulputate at vehicula a, auctor eu sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-          
-        </div>
-        <!--------------------- Character Story 4 End --------------------->
-        
-        
-        <!----------------------- Character Story 5 ----------------------->
-        <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-          <p class="mb-1" style="font-size:25px;">Character Story 5</p>
-          <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-          
-          <!-- Paragraphs: About -->
-          <p class="mb-1" style="text-align:justify; font-size:15px;">Vestibulum cursus nisi at nunc lobortis vestibulum. Aliquam at ultricies turpis. Phasellus orci nulla, lacinia pharetra vehicula quis, egestas eget elit. Duis a suscipit ligula, quis rhoncus turpis. Suspendisse potenti. Nunc luctus finibus scelerisque. Duis lacus lectus, tincidunt et est ut, mattis accumsan dui. Fusce aliquet tortor et interdum interdum. Cras et iaculis magna. Integer placerat ut mauris ac ultricies. Vivamus hendrerit consectetur nulla, ac vestibulum metus tristique sit amet. Morbi vitae placerat diam. Vestibulum maximus ante vitae ex facilisis semper. Duis et augue feugiat, placerat ligula non, gravida leo.</p>
-          <p class="mb-1" style="text-align:justify; font-size:15px;">Integer lacinia odio at erat fringilla ornare. Vestibulum odio dui, lobortis ut iaculis vitae, viverra sit amet purus. Mauris non lectus quis ex ornare ornare. Curabitur sagittis erat sit amet metus dapibus, sed vehicula nunc consectetur. In blandit fringilla mauris ut ultrices. Aenean in egestas ligula. Mauris nisl leo, vulputate at vehicula a, auctor eu sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-          
-        </div>
-        <!--------------------- Character Story 5 End --------------------->
-        
-        
-        <!--------------------- Character Story Extra --------------------->
-        <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-          <p class="mb-1" style="font-size:25px;">
-            
-            <!-- Story Title -->
-            Fire-Soothing Festival Committee
-            
-          </p>
-          <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-          
-          <!-- Paragraphs: About -->
-          <p class="mb-1" style="text-align:justify; font-size:15px;">Vestibulum cursus nisi at nunc lobortis vestibulum. Aliquam at ultricies turpis. Phasellus orci nulla, lacinia pharetra vehicula quis, egestas eget elit. Duis a suscipit ligula, quis rhoncus turpis. Suspendisse potenti. Nunc luctus finibus scelerisque. Duis lacus lectus, tincidunt et est ut, mattis accumsan dui. Fusce aliquet tortor et interdum interdum. Cras et iaculis magna. Integer placerat ut mauris ac ultricies. Vivamus hendrerit consectetur nulla, ac vestibulum metus tristique sit amet. Morbi vitae placerat diam. Vestibulum maximus ante vitae ex facilisis semper. Duis et augue feugiat, placerat ligula non, gravida leo.</p>
-          <p class="mb-1" style="text-align:justify; font-size:15px;">Integer lacinia odio at erat fringilla ornare. Vestibulum odio dui, lobortis ut iaculis vitae, viverra sit amet purus. Mauris non lectus quis ex ornare ornare. Curabitur sagittis erat sit amet metus dapibus, sed vehicula nunc consectetur. In blandit fringilla mauris ut ultrices. Aenean in egestas ligula. Mauris nisl leo, vulputate at vehicula a, auctor eu sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-          
-        </div>
-        <!------------------- Character Story Extra End ------------------->
-        
-        
-        <!------------------------- Vision Story ------------------------->
-        <div class="card card-block rounded-0 bg-faded" style="border-color:#AB93EB; color:#AB93EB; margin-left:10px; margin-bottom:10px;">
-          <p class="mb-1" style="font-size:25px;">Vision</p>
-          <div class="mb-1" style="height:2px; width:100%; background-color:#AB93EB;"></div>
-          
-          <!-- Paragraphs: About -->
-          <p class="mb-1" style="text-align:justify; font-size:15px;">Vestibulum cursus nisi at nunc lobortis vestibulum. Aliquam at ultricies turpis. Phasellus orci nulla, lacinia pharetra vehicula quis, egestas eget elit. Duis a suscipit ligula, quis rhoncus turpis. Suspendisse potenti. Nunc luctus finibus scelerisque. Duis lacus lectus, tincidunt et est ut, mattis accumsan dui. Fusce aliquet tortor et interdum interdum. Cras et iaculis magna. Integer placerat ut mauris ac ultricies. Vivamus hendrerit consectetur nulla, ac vestibulum metus tristique sit amet. Morbi vitae placerat diam. Vestibulum maximus ante vitae ex facilisis semper. Duis et augue feugiat, placerat ligula non, gravida leo.</p>
-          <p class="mb-1" style="text-align:justify; font-size:15px;">Integer lacinia odio at erat fringilla ornare. Vestibulum odio dui, lobortis ut iaculis vitae, viverra sit amet purus. Mauris non lectus quis ex ornare ornare. Curabitur sagittis erat sit amet metus dapibus, sed vehicula nunc consectetur. In blandit fringilla mauris ut ultrices. Aenean in egestas ligula. Mauris nisl leo, vulputate at vehicula a, auctor eu sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-          
-        </div>
-        <!----------------------- Vision Story End ----------------------->
-        
-        
-        <!-------------------------- Voicelines -------------------------->
-        <!-- You can add or delete voicelines to however many you want
-        Make sure to add/delete both the voice button and actual quote 
-        When adding new, make sure the href matches for  both button and quote -->
-        <div class="row no-gutters">
-          <a name="VOICE"></a>
-          <div class="col-lg-4">
-            <ul class="nav nav-tabs card-header-tabs row justify-content-between mb-2">
-              
-              <!------- Voice Button: Hello ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center active show" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#HELLO">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  Hello
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: Chat1 ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#CHAT1">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  Chat: Title
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: Chat2 ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#CHAT2">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  Chat: Title
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: Chat3 ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#CHAT3">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  Chat: Title
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: Rain ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#RAIN">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  When It Rains
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: Thunder ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#THUNDER">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  When Thunder Strikes
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: Snow ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#SNOW">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  When It Snows
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: Morning ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#MORNING">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  Good Morning
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: Night ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#NIGHT">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  Good Night
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: Vision ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#VISION">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  About The Vision
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: Share ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#SHARE">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  Something to Share
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: Interesting ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#INTERESTING">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  Interesting Things
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: About Character1 ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#ABOUT1">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  About Other Character
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: About Character2 ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#ABOUT2">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  About Other Character
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: Birthday ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#BIRTHDAY">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  Birthday
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: Ascension Intro ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#INTRO">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  Feelings About Ascension: Intro
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: Ascension Building Up ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#BUILDUP">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  Feelings About Ascension: Building Up
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: Ascension Climax ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#CLIMAX">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  Feelings About Ascension: Climax
-                  
-                </div>
-              </li>
-              
-              
-              <!------- Voice Button: Ascension Conclusion ------->
-              <li class="nav-item col-12 row" style="margin-left:10px; margin-bottom:10px;">
-                <a class="col-2 btn text-white shadow-none rounded-0 d-flex align-items-center justify-content-center" style="background-color:#AB93EB; padding:10px; font-size:20px;" data-toggle="tab" href="#CONCLUSION">
-                  <i class="fa-solid fa-play"></i></span>
-                </a>
-                <div class="col-10 card bg-faded text-left shadow-none rounded-0" style="border-color:#AB93EB; color:#AB93EB; width:100%; padding:10px; font-size:20px;">
-                  
-                  <!-- Title -->
-                  Feelings About Ascension: Conclusion
-                  
-                </div>
-              </li>
-              
-            </ul>
-            
-          </div>
-          <div class="col-lg-8">
-            <div style="position:sticky; top:10px;">
-              <div class="tab-content">
-                
-                
-                <!------- Quote: Hello ------->
-                <div class="text-center tab-pane active show" id="HELLO" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    Hello
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: Chat1 ------->
-                <div class="text-center tab-pane fade in" id="CHAT1" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    Chat: Creative Writing
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: Chat2 ------->
-                <div class="text-center tab-pane fade in" id="CHAT2" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    Chat: Stories
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: Chat3 ------->
-                <div class="text-center tab-pane fade in" id="CHAT3" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    Chat: Mortal World
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: Rain ------->
-                <div class="text-center tab-pane fade in" id="RAIN" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    When It Rains
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: Thunder ------->
-                <div class="text-center tab-pane fade in" id="THUNDER" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    When Thunder Strikes
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: Snow ------->
-                <div class="text-center tab-pane fade in" id="SNOW" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    When It Snows
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: Morning ------->
-                <div class="text-center tab-pane fade in" id="MORNING" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    Good Morning
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: Night ------->
-                <div class="text-center tab-pane fade in" id="NIGHT" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    Good Night
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: Vision ------->
-                <div class="text-center tab-pane fade in" id="VISION" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    About The Vision
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: Share ------->
-                <div class="text-center tab-pane fade in" id="SHARE" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    Something to Share
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: Interesting ------->
-                <div class="text-center tab-pane fade in" id="INTERESTING" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    Interesting Things
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: About Raiden ------->
-                <div class="text-center tab-pane fade in" id="ABOUT1" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    About the Raiden Shogun
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: About Kunikuzushi ------->
-                <div class="text-center tab-pane fade in" id="ABOUT2" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    About Kunikuzushi
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: Birthday ------->
-                <div class="text-center tab-pane fade in" id="BIRTHDAY" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    Birthday
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: Ascension Intro ------->
-                <div class="text-center tab-pane fade in" id="INTRO" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    Feelings About Ascension: Intro
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: Ascension Building Up ------->
-                <div class="text-center tab-pane fade in" id="BUILDUP" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    Feelings about Ascension: Building Up
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: Ascension Climax ------->
-                <div class="text-center tab-pane fade in" id="CLIMAX" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    Feelings about Ascension: Climax
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-                
-                <!------- Quote: Ascension Conclusion ------->
-                <div class="text-center tab-pane fade in" id="CONCLUSION" style="color:#AB93EB; padding-left:20px;">
-                  <p class="text-center" style="font-size:20px;">
-                    
-                    <!-- Title -->
-                    Feelings about Ascension: Conclusion
-                    
-                  </p>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-left"></i></span>
-                  <span style="font-size:25px; margin-left:5px; margin-right:5px;">
-                    
-                    <!-- Quote -->
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc consequat interdum varius sit amet mattis vulputate enim. Nunc sed id semper risus in hendrerit gravida.
-                    
-                  </span>
-                  <span style="font-size:35px;"><i class="fa-regular fa-quote-right"></i></span>
-                </div>
-                
-              </div>
-              <div class="card pull-right d-none d-lg-block d-xl-block" style="border:transparent; background:transparent; width:300px;">
-                
-                <!-- Put Image Here
-                Recommended to be atleast 300px wide
-                Note, this image and the artist credit will be hidden on mobile devices -->
-                <img class="pull-right rounded-0 px-5 px-md-1" src="https://via.placeholder.com/300" style="width:300px; margin-bottom:10px;">
-                
-                <!-- Artist Credit -->
-                <a class="tooltipster" href="LINK" style="position:absolute; bottom:8px; right:8px; color:#AB93EB;" title="art by NAME">
-                  <i class="fa-thin fa-paintbrush"></i>
-                </a>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-------------------------- Voicelines -------------------------->
-        
-        <!-- Credits, Don't Remove -->
-        <a class="tooltipster" style="color:#AB93EB; position:absolute; right:0px;" href="https://toyhou.se/hukiolukio" title="code by hukiolukio">
-          <i class="fa-solid fa-code"></i>
-        </a>
-        
-      </div>
-    </div>
-  </div>
   
+<!-- THIS CODE USES CUSTOM COLORS
+    
+    11. || Little Talks || F2U
+
+
+MAIN COLOR              == #cc795f
+
+SECONDARY COLOR (DARK)  == #765440
+
+THIRD COLOR (LIGHT)     == #ece4db
+
+LIGHT CARD COLOR        == #F6F0EA
+
+LIST LINES              == #D7CEC4
+
+
+
+-->
+
+<div class="card border-0 pt-5 pb-4" style="margin-top: -60px;">
+    <div class="container p-0" style="max-width: 1000px;">
+    <div class="row no-gutters">
+        
+        <!-- 
+        =====================================
+        
+               CHARACTER NAME BLOCK 
+        
+        =====================================
+        -->
+        <div class="card border-0 col-12 mb-0 mb-lg-n4 align-items-end" style="background: none;">
+        <div class="card border-0 col-12 col-lg-7 align-items-center" style="background: none;">
+            <p class="text-center" style="font-size: 30px; font-weight: 300; letter-spacing: 3px; color: #cc795f;">
+                
+                
+                Character Name
+                
+            <!-- FA ICON -->
+            <i class="fad fa-reel"></i>
+            </p>
+        </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        <!-- 
+        =====================================
+        
+           CHARACTER IMAGE + RIBBON BLOCK 
+        
+        =====================================
+        -->
+        <div class="col-12 mt-0 mt-lg-n5 mb-n2 align-items-center" style="z-index: 2;">
+            
+            <!-- RIBBON BLOCK 
+            
+            You can find & replace "flower" to change
+            it to another Font Awesome icon name
+            
+            -->
+            <div class="col-12 p-0 pt-2 pb-2" style="position: absolute; height: 100px; background: #ece4db;">
+                <div class="h-100" style="border: dashed 2px #cc795f; border-right: none; border-left: none;">
+                    <div class="row no-gutters h-100">
+                        <div class="card-flex align-items-center col-4 col-lg-3" style="z-index: 10;">
+                            <div class="col-12">
+                            <div class="row no-gutters justify-content-between pr-4 hidden-sm-down" style="color: #cc795f;">
+                                <i class="fad fa-flower fa-3x fa-fw hidden-lg-down"></i>
+                                <i class="fad fa-flower fa-3x fa-fw"></i>
+                                <i class="fad fa-flower fa-3x fa-fw"></i>
+                            </div>
+                            <div class="row no-gutters justify-content-left pr-4 ml-n2 ml-md-0 ml-lg-0 hidden-sm-up" style="color: #cc795f;">
+                                <i class="fad fa-flower fa-3x fa-fw fa-flip-horizontal"></i>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-2"></div>
+                        <div class="card-flex align-items-center col-4 col-lg-7" style="z-index: 10;">
+                            <div class="col-12">
+                            <div class="row no-gutters justify-content-between pl-4 hidden-sm-down" style="color: #cc795f;">
+                                <i class="fad fa-flower fa-3x fa-fw hidden-lg-down"></i>
+                                <i class="fad fa-flower fa-3x fa-fw hidden-md-down"></i>
+                                <i class="fad fa-flower fa-3x fa-fw hidden-md-down"></i>
+                                <i class="fad fa-flower fa-3x fa-fw hidden-md-down"></i>
+                                <i class="fad fa-flower fa-3x fa-fw"></i>
+                                <i class="fad fa-flower fa-3x fa-fw"></i>
+                            </div>
+                            <div class="row no-gutters justify-content-end pl-4 mr-n2 mr-md-0 mr-lg-0 hidden-sm-up" style="color: #cc795f;">
+                                <i class="fad fa-flower fa-3x fa-fw"></i>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            <div class="card border-0 col-12 col-lg-8 align-items-center" style="background: none;">
+            <div class="card bg-faded rounded-circle p-2" style="width: 250px; height: 250px; background: #ece4db; border: solid 2px #cc795f;">
+                
+            <div class="col p-0 align-items-center justify-content-center">
+            <div class="card border-0" style="height: 80px; width: 260px; position: absolute; background: #ece4db;"></div>
+            
+            
+            
+            <!-- 
+            ========================
+            
+                CHARACTER IMAGE 
+                
+            ========================   
+            -->
+                <div class="card rounded-circle h-100 w-100 p-2" style="
+            
+            
+                    background-image: url(URLHERE); 
+                    background-size: cover; 
+                    background-position: center;">
+                
+                    <div class="h-100 rounded-circle" style="border: dashed 2px #ece4db;"></div>
+                </div>
+            
+            
+            </div>
+            
+            </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <!-- 
+        =====================================
+        
+                    QUOTE BLOCK
+        
+        =====================================
+        -->
+        <div class="col-12 col-lg-4 mt-n5 pr-0 pr-lg-2">
+        <div class="card border-0 h-100" style="background: #765440; color: #cc795f;">
+            <i class="fad fa-quote-left fa-2x" style="position: absolute; left: 5px; top: 0px;"></i>
+            <i class="fad fa-quote-right fa-2x" style="position: absolute; right: 5px; bottom: 0px;"></i>
+            <div class="h-100 p-3 align-items-center mt-5 mt-lg-0 mb-5 mb-lg-0" style="font-family: Georgia, serif; font-size: 20px; font-style: italic;">
+                
+                
+            <!-- INSERT YOUR QUOTE HERE -->
+                <p class="text-center">
+                    
+                    
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    
+                    
+                </p>
+            </div>
+        </div>
+        </div>
+        
+        
+        
+        
+        
+        <!-- 
+        =====================================
+        
+                 MAIN CONTENT BLOCK 
+        
+        =====================================
+        -->
+        <div class="col-12 col-lg-8 mt-3 mt-lg-n5 pl-0 pl-lg-2" >
+        <div class="card border-0 h-100" style="background: #ece4db;">
+        <div class="row no-gutters">
+            
+            <!-- NAVIGATION BUTTONS -->
+            <div class="col-12 col-lg-1 pt-4 pt-lg-0 pb-2 pb-lg-0 card-flex align-items-center justify-content-center">
+                <div class="w-100" style="position: absolute;">
+                <ul class="nav row no-gutters justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#intro" style="color: #cc795f;"><i class="fad fa-portrait fa-2x fa-fw"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#stats" style="color: #cc795f;"><i class="fad fa-sliders-simple fa-2x fa-fw"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#look" style="color: #cc795f;"><i class="fad fa-swatchbook fa-2x fa-fw"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#story" style="color: #cc795f;"><i class="fad fa-memo-pad fa-2x fa-fw"></i></a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            
+            
+            
+            <div class="col pl-3 pl-lg-1 pr-3 pt-3 pb-3" style="height: 350px;">
+            <div class="rounded h-100 p-2" style="background: #F6F0EA;">
+            <div class="rounded h-100 p-1" style="border: dashed 2px #765440;">
+            <div class="card h-100" style="border: dashed 2px #cc795f; background: #F6F0EA; overflow: hidden;">
+                
+            <div class="tab-content">
+                
+                
+                
+                <!-- 
+                ================================
+                
+                          BASICS TAB
+                
+                ================================
+                -->
+                <div class="tab-pane fade in active show" id="intro">
+                <div style="height: 286px; overflow: auto;">
+                <div class="row no-gutters">
+                    
+                    <!--
+                    ============================
+                            BASIC INFO
+                    ============================
+                    -->
+                    <div class="col-12 col-lg">
+                    <div class="col p-2" style="height: 286px; position: sticky; top: 0px; font-size: 16px; color: #765440;">
+                        
+                        
+                        <!-- GENDER -->
+                        <div class="row no-gutters justify-content-between">
+                            <span style="font-family: Georgia, serif;"><span><i class="fad fa-venus-mars fa-fw mr-1"></i></span>
+                            
+                            Gender
+                            
+                            </span>
+                            <span style="color: #cc795f;">
+                                
+                                Content
+                            
+                            </span>
+                        </div>
+                        
+                        <!-- PRONOUNS -->
+                        <div class="row no-gutters justify-content-between">
+                            <span style="font-family: Georgia, serif;"><span><i class="fad fa-comments fa-fw mr-1"></i></span>
+                            
+                            Pronouns
+                            
+                            </span>
+                            <span style="color: #cc795f;">
+                                
+                                Cont/Cont
+                            
+                            </span>
+                        </div>
+                        
+                        <!-- AGE -->
+                        <div class="row no-gutters justify-content-between">
+                            <span style="font-family: Georgia, serif;"><span><i class="fad fa-hourglass fa-fw mr-1"></i></span>
+                            
+                            Age
+                            
+                            </span>
+                            <span style="color: #cc795f;">
+                                
+                                Content
+                            
+                            </span>
+                        </div>
+                        
+                        <!-- DOB -->
+                        <div class="row no-gutters justify-content-between">
+                            <span style="font-family: Georgia, serif;"><span><i class="fad fa-birthday-cake fa-fw mr-1"></i></span>
+                            
+                            DoB
+                            
+                            </span>
+                            <span style="color: #cc795f;">
+                                
+                                Content
+                            
+                            </span>
+                        </div>
+                        
+                        <!-- SIGN -->
+                        <div class="row no-gutters justify-content-between">
+                            <span style="font-family: Georgia, serif;"><span><i class="fad fa-star-shooting fa-fw mr-1"></i></span>
+                            
+                            Sign
+                            
+                            </span>
+                            <span style="color: #cc795f;">
+                                
+                                Content
+                            
+                            </span>
+                        </div>
+                        
+                        <!-- ORIENTATION -->
+                        <div class="row no-gutters justify-content-between">
+                            <span style="font-family: Georgia, serif;"><span><i class="fad fa-heartbeat fa-fw mr-1"></i></span>
+                            
+                            S.O.
+                            
+                            </span>
+                            <span style="color: #cc795f;">
+                                
+                                Content
+                            
+                            </span>
+                        </div>
+                        
+                        <!-- HEIGHT -->
+                        <div class="row no-gutters justify-content-between">
+                            <span style="font-family: Georgia, serif;"><span><i class="fad fa-ruler-vertical fa-fw mr-1"></i></span>
+                            
+                            Height
+                            
+                            </span>
+                            <span style="color: #cc795f;">
+                                
+                                Content
+                            
+                            </span>
+                        </div>
+                        
+                        <!-- ALIGNMENT -->
+                        <div class="row no-gutters justify-content-between">
+                            <span style="font-family: Georgia, serif;"><span><i class="fad fa-scale-unbalanced fa-fw mr-1"></i></span>
+                            
+                            Alignment
+                            
+                            </span>
+                            <span style="color: #cc795f;">
+                                
+                                Content
+                            
+                            </span>
+                        </div>
+                        
+                        <!-- OCCUPATION -->
+                        <div class="row no-gutters justify-content-between">
+                            <span style="font-family: Georgia, serif;"><span><i class="fad fa-suitcase fa-fw mr-1"></i></span>
+                            
+                            Occupation
+                            
+                            </span>
+                            <span style="color: #cc795f;">
+                                
+                                Content
+                            
+                            </span>
+                        </div>
+                        
+                        <!-- HOMETOWN -->
+                        <div class="row no-gutters justify-content-between">
+                            <span style="font-family: Georgia, serif;"><span><i class="fad fa-home fa-fw mr-1"></i></span>
+                            
+                            Hometown
+                            
+                            </span>
+                            <span style="color: #cc795f;">
+                                
+                                Content
+                            
+                            </span>
+                        </div>
+                        
+                        
+                        <!-- THEME -->
+                        <div class="row no-gutters justify-content-between align-items-center p-1 pl-3 pr-3" style="background: #ece4db;">
+                            <span style="font-family: Georgia, serif;"><span><i class="fad fa-music fa-fw mr-1"></i></span>
+                            
+                            Theme
+                            
+                            </span>
+                            <div class="card border-0 align-items-center justify-content-center tooltipster" style="height: 20px; width: 20px; overflow: hidden; background: none;" 
+                                
+                                
+                                
+                                
+                                title="Of Monsters And Men - Little Talks">
+                                    
+                                    
+                                    
+                                    
+                                <i class="fad fa-circle-play fa-fw" style="color: #cc795f;"></i>
+                                    
+                                <iframe style="opacity: 0.001; height: 700%; width: 850%; position: absolute; bottom: 0px; left: -2px;"
+                                    
+                                    
+                                src="https://www.youtube.com/embed/ghb6eDopW8I"></iframe>
+                                <!-- YOUTUBE EMBED == INSERT EMBED CODE OF YOUR VIDEO
+                                 
+                                    If you are struggling with what YT video ID is, let 
+                                    me show you an example on the song that is embedded 
+                                    here in code's preview.
+                                    
+                                    Here's the whole video link:
+                                    https://www.youtube.com/watch?v=ghb6eDopW8I&ab_channel=ChannelName
+                                    
+                                    And what we need is a string between "=" and "&":
+                                    https://www.youtube.com/watch?v=    ghb6eDopW8I  &ab_channel=ChannelName
+                                    
+                                    And we put it here:
+                                    https://www.youtube.com/embed/ghb6eDopW8I
+                                        
+                                    That's it!
+                                    -->
+                                        
+                                </div>
+                        </div>
+                        
+                        
+                    </div>
+                    </div>
+                    
+                    <!-- 
+                    ================================
+                              LITTLE CHAT
+                    This content card is up to your 
+                    imagination! You can write an
+                    everyday dialog, a little plot
+                    chat between two characters or just
+                    come up with a random conversation
+                    that will show character's demeanor,
+                    lifeview, some strenghts or weak points
+                    and so on!
+                    ================================
+                    -->
+                    <div class="col-12 col-lg-6 pt-2 pb-4">
+                    <div class="row no-gutters">
+                        
+                        <!-- LIGHT BUBBLE -->
+                        <div class="col-12 pr-5">
+                        <div class="row no-gutters pl-2">
+                        <div class="col-auto p-2 px-3 my-1" style="border-radius: 2em; background: #ece4db; color: #765440;">
+                            Content
+                        </div>
+                        </div>
+                        </div>
+                        
+                        <!-- DARK BUBBLE -->    
+                        <div class="col-12 pl-5 justify-content-end">
+                        <div class="row no-gutters pr-2">
+                        <div class="col-auto p-2 px-3 my-1" style="border-radius: 2em; background: #cc795f; color: #fff;">
+                            Content
+                        </div>
+                        </div>
+                        </div>
+                        
+                        <!-- LIGHT BUBBLE -->
+                        <div class="col-12 pr-5">
+                        <div class="row no-gutters pl-2">
+                        <div class="col-auto p-2 px-3 my-1" style="border-radius: 2em; background: #ece4db; color: #765440;">
+                            Content
+                        </div>
+                        </div>
+                        </div>
+                        
+                        <!-- DARK BUBBLE -->    
+                        <div class="col-12 pl-5 justify-content-end">
+                        <div class="row no-gutters pr-2">
+                        <div class="col-auto p-2 px-3 my-1" style="border-radius: 2em; background: #cc795f; color: #fff;">
+                            Content
+                        </div>
+                        </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- YOU CAN ADD MORE BUBBLES ABOVE -->
+                    </div>
+                    </div>
+                    
+                </div>
+                </div>
+                </div>
+                
+                
+                
+                
+                <!-- 
+                ================================
+                
+                          STATS TAB
+                
+                ================================
+                -->
+                <div class="tab-pane fade" id="stats">
+                <div style="height: 286px; overflow: auto;">
+                <div class="row no-gutters" style="font-family: Georgia, serif; font-size: 16px; color: #765440;">
+                    
+                    
+                    <!-- 
+                    ==============================
+                           PROGRESS BARS
+                    ==============================
+                    -->
+                    <div class="col-12 col-lg-6 p-1">
+                        
+                        
+                        <!-- EXTROVERTED == INTROVERTED -->
+                        <div class="col mb-2">
+                            <div class="row no-gutters justify-content-between mb-1">
+                                <span>Extroverted</span>
+                                <span>Introverted</span>
+                            </div>
+                            <div class="progress" style="height: 3px; overflow: visible; background: #765440;">
+                                
+                            <!-- PROGRESS BAR == CHANGE 50% VALUE TO 1-100% -->
+                                <div class="progress-bar" style="background: none; margin-top: -3px; 
+                                                
+                                width: 50%
+                                                
+                                ;">
+                                                    
+                                    <i class="fas fa-circle pull-right" style="color: #cc795f;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- INSTINCTIVE == CALCULATED -->
+                        <div class="col mb-2">
+                            <div class="row no-gutters justify-content-between mb-1">
+                                <span>Instinctive</span>
+                                <span>Calculated</span>
+                            </div>
+                            <div class="progress" style="height: 3px; overflow: visible; background: #765440;">
+                                
+                            <!-- PROGRESS BAR == CHANGE 50% VALUE TO 1-100% -->
+                                <div class="progress-bar" style="background: none; margin-top: -3px; 
+                                                
+                                width: 50%
+                                                
+                                ;">
+                                                    
+                                    <i class="fas fa-circle pull-right" style="color: #cc795f;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- POLITE == SASSY -->
+                        <div class="col mb-2">
+                            <div class="row no-gutters justify-content-between mb-1">
+                                <span>Polite</span>
+                                <span>Sassy</span>
+                            </div>
+                            <div class="progress" style="height: 3px; overflow: visible; background: #765440;">
+                                
+                            <!-- PROGRESS BAR == CHANGE 50% VALUE TO 1-100% -->
+                                <div class="progress-bar" style="background: none; margin-top: -3px; 
+                                                
+                                width: 50%
+                                                
+                                ;">
+                                                    
+                                    <i class="fas fa-circle pull-right" style="color: #cc795f;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- DECEPTIVE == SINCERE -->
+                        <div class="col mb-2">
+                            <div class="row no-gutters justify-content-between mb-1">
+                                <span>Deceptive</span>
+                                <span>Sincere</span>
+                            </div>
+                            <div class="progress" style="height: 3px; overflow: visible; background: #765440;">
+                                
+                            <!-- PROGRESS BAR == CHANGE 50% VALUE TO 1-100% -->
+                                <div class="progress-bar" style="background: none; margin-top: -3px; 
+                                                
+                                width: 50%
+                                                
+                                ;">
+                                                    
+                                    <i class="fas fa-circle pull-right" style="color: #cc795f;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- INDIFFERENT == EMOTIONAL -->
+                        <div class="col mb-2">
+                            <div class="row no-gutters justify-content-between mb-1">
+                                <span>Indifferent</span>
+                                <span>Emotional</span>
+                            </div>
+                            <div class="progress" style="height: 3px; overflow: visible; background: #765440;">
+                                
+                            <!-- PROGRESS BAR == CHANGE 50% VALUE TO 1-100% -->
+                                <div class="progress-bar" style="background: none; margin-top: -3px; 
+                                                
+                                width: 50%
+                                                
+                                ;">
+                                                    
+                                    <i class="fas fa-circle pull-right" style="color: #cc795f;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- RESERVED == AFFECTIONATE -->
+                        <div class="col mb-2">
+                            <div class="row no-gutters justify-content-between mb-1">
+                                <span>Reserved</span>
+                                <span>Affectionate</span>
+                            </div>
+                            <div class="progress" style="height: 3px; overflow: visible; background: #765440;">
+                                
+                            <!-- PROGRESS BAR == CHANGE 50% VALUE TO 1-100% -->
+                                <div class="progress-bar" style="background: none; margin-top: -3px; 
+                                                
+                                width: 50%
+                                                
+                                ;">
+                                                    
+                                    <i class="fas fa-circle pull-right" style="color: #cc795f;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- LONE WOLF == TEAM PLAYER -->
+                        <div class="col">
+                            <div class="row no-gutters justify-content-between mb-1">
+                                <span>Lone wolf</span>
+                                <span>Team player</span>
+                            </div>
+                            <div class="progress" style="height: 3px; overflow: visible; background: #765440;">
+                                
+                            <!-- PROGRESS BAR == CHANGE 50% VALUE TO 1-100% -->
+                                <div class="progress-bar" style="background: none; margin-top: -3px; 
+                                                
+                                width: 50%
+                                                
+                                ;">
+                                                    
+                                    <i class="fas fa-circle pull-right" style="color: #cc795f;"></i>
+                                </div>
+                            </div>
+                        </div>
+                                        
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    <!-- 
+                    ==============================
+                          STANDALONE STATS
+                    ==============================
+                    -->
+                    <div class="col-12 col-lg-6 p-1" style="font-size: 20px;">
+                        
+                        
+                        <!-- CHARISMA STAT -->
+                        <div class="row no-gutters align-items-center">
+                            <div class="col text-truncate">
+                                
+                                Charisma
+                                
+                            </div>
+                            <div class="col justify-content-end" style="color: #cc795f;">
+                            <div class="row no-gutters">
+                                
+                            <!-- STAT CIRCLES == Use FAD for solid and FAL for empty -->
+                                <i class="fad fa-circle-dot fa-fw"></i>
+                                <i class="fad fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- COURAGE STAT -->
+                        <div class="row no-gutters align-items-center">
+                            <div class="col text-truncate">
+                                
+                                Courage
+                                
+                            </div>
+                            <div class="col justify-content-end" style="color: #cc795f;">
+                            <div class="row no-gutters">
+                                
+                            <!-- STAT CIRCLES == Use FAD for solid and FAL for empty -->
+                                <i class="fad fa-circle-dot fa-fw"></i>
+                                <i class="fad fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- LOYALTY STAT -->
+                        <div class="row no-gutters align-items-center">
+                            <div class="col text-truncate">
+                                
+                                Loyalty
+                                
+                            </div>
+                            <div class="col justify-content-end" style="color: #cc795f;">
+                            <div class="row no-gutters">
+                                
+                            <!-- STAT CIRCLES == Use FAD for solid and FAL for empty -->
+                                <i class="fad fa-circle-dot fa-fw"></i>
+                                <i class="fad fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- INTELLECT STAT -->
+                        <div class="row no-gutters align-items-center">
+                            <div class="col text-truncate">
+                                
+                                Intellect
+                                
+                            </div>
+                            <div class="col justify-content-end" style="color: #cc795f;">
+                            <div class="row no-gutters">
+                                
+                            <!-- STAT CIRCLES == Use FAD for solid and FAL for empty -->
+                                <i class="fad fa-circle-dot fa-fw"></i>
+                                <i class="fad fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- PATIENCE STAT -->
+                        <div class="row no-gutters align-items-center">
+                            <div class="col text-truncate">
+                                
+                                Patience
+                                
+                            </div>
+                            <div class="col justify-content-end" style="color: #cc795f;">
+                            <div class="row no-gutters">
+                                
+                            <!-- STAT CIRCLES == Use FAD for solid and FAL for empty -->
+                                <i class="fad fa-circle-dot fa-fw"></i>
+                                <i class="fad fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- KINDNESS STAT -->
+                        <div class="row no-gutters align-items-center">
+                            <div class="col text-truncate">
+                                
+                                Kindness
+                                
+                            </div>
+                            <div class="col justify-content-end" style="color: #cc795f;">
+                            <div class="row no-gutters">
+                                
+                            <!-- STAT CIRCLES == Use FAD for solid and FAL for empty -->
+                                <i class="fad fa-circle-dot fa-fw"></i>
+                                <i class="fad fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                <i class="fal fa-circle-dot fa-fw"></i>
+                                
+                            </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- MBTI -->
+                        <div class="row no-gutters justify-content-between pr-2" style="font-size: 16px;">
+                            <span style="font-family: Georgia, serif; color: #cc795f;"><span><i class="fad fa-head-side-brain fa-fw mr-1"></i></span>
+                            
+                            MBTI
+                            
+                            </span>
+                            <span>
+                                
+                                Content
+                            
+                            </span>
+                        </div>
+                        
+                        <!-- ARCHETYPE -->
+                        <div class="row no-gutters justify-content-between pr-2" style="font-size: 16px;">
+                            <span style="font-family: Georgia, serif; color: #cc795f;"><span><i class="fad fa-circle-o fa-fw mr-1"></i></span>
+                            
+                            Archetype
+                            
+                            </span>
+                            <span>
+                                
+                                Content
+                            
+                            </span>
+                        </div>
+                        
+                        <!-- LEADING TRAIT (POSITIVE TRAIT) -->
+                        <div class="row no-gutters justify-content-between pr-2" style="font-size: 16px;">
+                            <span style="font-family: Georgia, serif; color: #cc795f;"><span><i class="fad fa-smile fa-fw mr-1"></i></span>
+                            
+                            Leading trait
+                            
+                            </span>
+                            <span>
+                                
+                                Trait
+                            
+                            </span>
+                        </div>
+                        
+                        <!-- BIGGEST FLAW (NEGATIVE TRAIT) -->
+                        <div class="row no-gutters justify-content-between pr-2" style="font-size: 16px;">
+                            <span style="font-family: Georgia, serif; color: #cc795f;"><span><i class="fad fa-frown fa-fw mr-1"></i></span>
+                            
+                            Biggest flaw
+                            
+                            </span>
+                            <span>
+                                
+                                Trait
+                            
+                            </span>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+                </div>
+                </div>
+                
+                
+                
+                
+                <!-- 
+                ================================
+                
+                         DESIGN TAB
+                
+                ================================
+                -->
+                <div class="tab-pane fade" id="look">
+                <div style="height: 286px; overflow: auto;">
+                <div class="row no-gutters">
+                    
+                    <!--
+                    ============================
+                          IMAGE + PALETTE
+                    ============================
+                    -->
+                    <div class="col-12 col-lg">
+                    <div class="col p-2" style="height: 286px; position: sticky; top: 0px;">
+                        
+                        <div class="card border-0 h-100 p-2" style="background: #765440;">
+                        <div class="card h-100 p-1" style="background: #F6F0EA;">
+                            
+                            
+                        <!-- CHARACTER IMAGE -->
+                            <div class="card h-100" style="
+                            
+                            background-image: url(URLHERE);
+                            background-size: cover;
+                            background-position: top;
+                            
+                            ">
+                                
+                            <!-- CHARACTER PALETTE -->    
+                            <div class="w-100 p-1" style="position: absolute; bottom: 0px;">
+                            <div class="card" style="border-radius: 0px 0px 2px 2px; background: #765440; padding: 2px;">
+                            <div class="row no-gutters" style="min-height: 15px;">
+                                
+                                
+                                <!-- PALETTE COLOR -->
+                                <div class="col" style="background: #ccc;"></div>
+                                
+                                <!-- PALETTE COLOR -->
+                                <div class="col" style="background: #aaa;"></div>
+                                
+                                <!-- PALETTE COLOR -->
+                                <div class="col" style="background: #999;"></div>
+                                
+                                <!-- PALETTE COLOR -->
+                                <div class="col" style="background: #777;"></div>
+                                
+                                <!-- PALETTE COLOR -->
+                                <div class="col" style="background: #555;"></div>
+                                
+                                
+                                
+                                
+                                <!-- YOU CAN ADD MORE COLORS ABOVE -->
+                            </div>
+                            </div>
+                            </div>    
+                                
+                            </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    </div>
+                    
+                    <!-- 
+                    ================================
+                        
+                             DESIGN NOTES
+                        
+                    ================================
+                    -->
+                    <div class="col-12 col-lg-6 p-2">
+                        <p class="text-center" style="font-family: Georgia, serif; font-size: 20px; color: #765440;">
+                            
+                            Design notes <i class="fad fa-pencil fa-fw"></i>
+                            
+                        </p>
+                        
+                        <ul class="list-group ml-4">
+                            
+                            <!-- LIST ITEM -->
+                            <li style="color: #cc795f;"><span style="color: #765440;">
+                                
+                                Lorem ipsum dolor sit amet, consec adipiscing elit.
+                                
+                            </span></li>
+                            
+                            <!-- LIST ITEM -->
+                            <li style="color: #cc795f;"><span style="color: #765440;">
+                                
+                                Duis sollicitudin elit sed tellus blandit viverra sed eget odio.
+                                
+                            </span></li>
+                            
+                            <!-- LIST ITEM -->
+                            <li style="color: #cc795f;"><span style="color: #765440;">
+                                
+                                Donec accumsan tempor lacus, et venenatis elit feugiat non.
+                                
+                            </span></li>
+                            
+                            <!-- LIST ITEM -->
+                            <li style="color: #cc795f;"><span style="color: #765440;">
+                                
+                                Duis porta eros et velit blandit dapibus.
+                                
+                            </span></li>
+                            
+                            <!-- LIST ITEM -->
+                            <li style="color: #cc795f;"><span style="color: #765440;">
+                                
+                                Curabitur ac finibus eros. Duis placerat velit vitae massa sodales, eget mattis nibh pellentesque.
+                                
+                            </span></li>
+                            
+                            
+                            
+                            
+                            
+                            <!-- YOU CAN ADD MORE ABOVE -->
+                        </ul>
+                        
+                    </div>
+                    
+                </div>
+                </div>
+                </div>
+                
+                
+                
+                <!-- 
+                ================================
+                
+                          STORY TAB
+                
+                ================================
+                -->
+                <div class="tab-pane fade" id="story">
+                <div class="p-2 text-justify" style="height: 286px; overflow: auto; color: #765440;">
+                    
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio. Donec accumsan tempor lacus, et venenatis elit feugiat non. Duis porta eros et velit blandit dapibus.</p>
+                    
+                    
+                <!-- SUBHEADER -->
+                    <p class="mb-0" style="font-family: Georgia, serif; font-size: 20px;"><i class="fad fa-bookmark fa-fw"></i>
+                    
+                    Subheader
+                    
+                    </p>
+                    
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio. Donec accumsan tempor lacus, et venenatis elit feugiat non. Duis porta eros et velit blandit dapibus. Curabitur ac finibus eros. Duis placerat velit vitae massa sodales, eget mattis nibh pellentesque.</p>
+                    
+                    
+                <!-- SUBHEADER -->
+                    <p class="mb-0" style="font-family: Georgia, serif; font-size: 20px;"><i class="fad fa-bookmark fa-fw"></i>
+                    
+                    Subheader
+                    
+                    </p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio. Donec accumsan tempor lacus, et venenatis elit feugiat non. Duis porta eros et velit blandit dapibus. Curabitur ac finibus eros. Duis placerat velit vitae massa sodales, eget mattis nibh pellentesque.</p>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+                </div>
+                
+                
+                
+                
+            </div>
+                
+            </div>
+            </div>
+            </div>
+            </div>
+            
+        </div>
+        </div>
+        </div>
+        
+        
+        
+        
+        
+        <!-- 
+        =====================================
+        
+             DIS/LIKES & HOBBIES BLOCK 
+        
+        =====================================
+        -->
+        <div class="col-12 col-lg-9 mt-3 pr-lg-3">
+            <div class="card border-0 h-100 pt-3 pl-3 pr-1 pb-1" style="background: #ece4db; color: #765440;">
+            <div class="h-100 pt-1 pl-1" style="border: dashed 2px #765440; border-right: 0px; border-bottom: 0px;">
+            <div class="h-100" style="border: dashed 2px #cc795f; border-right: 0px; border-bottom: 0px; overflow: auto;">
+            <div class="row no-gutters p-2 ">
+                
+                <!-- LIKES SECTION -->
+                <div class="col-12 col-lg p-2 mr-0 mr-lg-2 mb-2 mb-lg-0" style="background: #F6F0EA;">
+                    <span style="font-size: 20px; color: #cc795f;">
+                        
+                        Likes
+                        
+                    <span class="pull-right"><i class="fad fa-circle-heart"></i></span></span>
+                    
+                    <ul class="list-group pl-4 mt-1 pb-3 p-2" style="font-family: Brush Script MT, cursive; border-top: dotted 6px #ece4db;">
+                        
+                        <!-- LIST ITEM -->
+                        <li>
+                            
+                            Content
+                        </li>
+                        <hr class="w-100 m-0" style="background: #D7CEC4;">
+                        
+                        <!-- LIST ITEM -->
+                        <li>
+                            
+                            Content
+                        </li>
+                        <hr class="w-100 m-0" style="background: #D7CEC4;">
+                        
+                        <!-- LIST ITEM -->
+                        <li>
+                            
+                            Content
+                        </li>
+                        <hr class="w-100 m-0" style="background: #D7CEC4;">
+                        
+                        <!-- LIST ITEM -->
+                        <li>
+                            
+                            Content
+                        </li>
+                        <hr class="w-100 m-0" style="background: #D7CEC4;">
+                    </ul>
+                </div>
+                
+                
+                
+                <!-- DISLIKES SECTION -->
+                <div class="col-12 col-lg p-2 mr-0 mr-lg-2 mb-2 mb-lg-0" style="background: #F6F0EA;">
+                    <span style="font-size: 20px; color: #cc795f;">
+                        
+                        Disikes
+                    
+                    <span class="pull-right"><i class="fad fa-circle-x"></i></span></span>
+                    
+                    <ul class="list-group pl-4 mt-1 pb-3 p-2" style="font-family: Brush Script MT, cursive; border-top: dotted 6px #ece4db;">
+                        
+                        <!-- LIST ITEM -->
+                        <li>
+                            
+                            Content
+                        </li>
+                        <hr class="w-100 m-0" style="background: #D7CEC4;">
+                        
+                        <!-- LIST ITEM -->
+                        <li>
+                            
+                            Content
+                        </li>
+                        <hr class="w-100 m-0" style="background: #D7CEC4;">
+                        
+                        <!-- LIST ITEM -->
+                        <li>
+                            
+                            Content
+                        </li>
+                        <hr class="w-100 m-0" style="background: #D7CEC4;">
+                        
+                        <!-- LIST ITEM -->
+                        <li>
+                            
+                            Content
+                        </li>
+                        <hr class="w-100 m-0" style="background: #D7CEC4;">
+                    </ul>
+                </div>
+                
+                
+                
+                <!-- HOBBIES SECTION -->
+                <div class="col-12 col-lg p-2 mr-0 mr-lg-2" style="background: #F6F0EA;">
+                    <span style="font-size: 20px; color: #cc795f;">
+                        
+                        Hobbies
+                    
+                    <span class="pull-right"><i class="fad fa-circle-star"></i></span></span>
+                    
+                    <ul class="list-group pl-4 mt-1 pb-3 p-2" style="font-family: Brush Script MT, cursive; border-top: dotted 6px #ece4db;">
+                        
+                        <!-- LIST ITEM -->
+                        <li>
+                            
+                            Content
+                        </li>
+                        <hr class="w-100 m-0" style="background: #D7CEC4;">
+                        
+                        <!-- LIST ITEM -->
+                        <li>
+                            
+                            Content
+                        </li>
+                        <hr class="w-100 m-0" style="background: #D7CEC4;">
+                        
+                        <!-- LIST ITEM -->
+                        <li>
+                            
+                            Content
+                        </li>
+                        <hr class="w-100 m-0" style="background: #D7CEC4;">
+                        
+                        <!-- LIST ITEM -->
+                        <li>
+                            
+                            Content
+                        </li>
+                        <hr class="w-100 m-0" style="background: #D7CEC4;">
+                    </ul>
+                </div>
+                
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <!-- 
+        =====================================
+        
+               TOP AESTHETIC BLOCK 
+        
+        =====================================
+        -->
+        <div class="card border-0 col-12 col-lg-3 mt-3 p-2 order-1 order-lg-0" style="background: #765440; min-height: 220px;">
+            <div class="card h-100 p-2" style="border: solid 3px #ece4db;
+            
+            background-image: url(URLHERE);
+            background-size: cover;
+            background-position: center;">
+                
+                <div class="rounded h-100" style="border: dashed 2px #ece4db;"></div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <!-- 
+        =====================================
+        
+               RELATIONSHIPS BLOCK 
+        
+        =====================================
+        -->
+        <div class="card col-12 col-lg mt-3 mr-3 border-0" style="background: #ece4db;">
+        <div class="row no-gutters h-100 p-1 pl-3">
+        
+        <!-- STITCHED BORDERS -->
+        <div class="col-auto h-100 pr-1" style="border-left: dashed 2px #765440; border-right: dashed 2px #cc795f;"></div>
+        
+        <div class="col ml-3 mr-3" style="background: #F6F0EA;">
+            
+            
+            <!-- RELATIONSHIPS HEADER -->
+            <div class="row no-gutters p-1" style="font-size: 17px;">
+                
+                <div class="col-auto align-items-center pl-2">
+                <a href="#beep" data-slide="prev" style="color: #cc795f;"><i class="fad fa-angles-left"></i></a>
+                </div>
+                
+                <div class="col"><p class="text-center" style="color: #cc795f;">
+                    
+                    Relationships
+                
+                </p></div>
+                
+                <div class="col-auto align-items-center pr-2">
+                <a href="#beep" data-slide="next" style="color: #cc795f;"><i class="fad fa-angles-right"></i></a>
+                </div>
+                
+            </div>
+            
+            
+            <div class="carousel slide" id="beep" data-ride="false" data-pause="true" style="border-top: dotted 6px #ece4db;">
+            <div class="carousel-inner">
+                
+                
+                
+                
+            <!--
+            ====================================
+                CHARACTER RELATIONSHIP BLOCK
+            ====================================
+            -->
+                <div class="carousel-item active">
+                <div class="row no-gutters">
+                    
+                    
+                    <!-- CHARACTER IMAGE CARD -->
+                    <div class="col-12 col-lg-5 p-2 justify-content-center align-items-center">
+                    <div class="card p-2 border-0" style="height: 155px; width: 150px; background: #765440;">
+                        
+                        
+                    <!-- CHARACTER IMAGE -->
+                        <div class="card h-100" style=" border: solid 3px #ece4db;
+                        
+                        
+                        background-image: url(URLHERE); 
+                        background-size: cover; 
+                        background-position: center;
+                        
+                        
+                        "></div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    <!-- NAME + INFO CARD -->
+                    <div class="col-12 col-lg p-2">
+                        
+                    <!-- CHARACTER NAME + RELATIONSHIP-->
+                        <div class="row no-gutters justify-content-between" style="font-family: Georgia, serif; font-size: 18px;">
+                            <a target="_BLANK" style="color: #cc795f;" 
+                            
+                            href="LINK_HERE">
+                                
+                                
+                                Character Name
+                                
+                            
+                            </a>
+                            
+                            <i style="color: #cc795f; margin-top: 5px; animation-duration: 1.5s;"
+                            
+                            
+                            title="Relationship" 
+                            
+                            class="fad fa-rings-wedding fa-beat fa-fw tooltipster"></i>
+                            
+                            <!-- FA ICON == replace "rings-wedding" with other icon name -->
+                            
+                        </div>
+                        
+                        
+                        <div class="p-2 pl-lg-0 text-justify small" style="height: 128px; overflow: auto; color: #765440;">
+                            
+                            
+                        <!-- RELATIONSHIP DESCRIPTION -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio. Donec accumsan tempor lacus, et venenatis elit feugiat non. Duis porta eros et velit blandit dapibus. Curabitur ac finibus eros.</p>
+                            
+                        </div>
+                        
+                    </div>
+                </div>    
+                </div>
+                
+                
+                
+                
+            <!--
+            ====================================
+                CHARACTER RELATIONSHIP BLOCK
+            ====================================
+            -->
+                <div class="carousel-item">
+                <div class="row no-gutters">
+                    
+                    
+                    <!-- CHARACTER IMAGE CARD -->
+                    <div class="col-12 col-lg-5 p-2 justify-content-center align-items-center">
+                    <div class="card p-2 border-0" style="height: 155px; width: 150px; background: #765440;">
+                        
+                        
+                    <!-- CHARACTER IMAGE -->
+                        <div class="card h-100" style=" border: solid 3px #ece4db;
+                        
+                        
+                        background-image: url(URLHERE); 
+                        background-size: cover; 
+                        background-position: center;
+                        
+                        
+                        "></div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    <!-- NAME + INFO CARD -->
+                    <div class="col-12 col-lg p-2">
+                        
+                    <!-- CHARACTER NAME + RELATIONSHIP-->
+                        <div class="row no-gutters justify-content-between" style="font-family: Georgia, serif; font-size: 18px;">
+                            <a target="_BLANK" style="color: #cc795f;" 
+                            
+                            href="LINK_HERE">
+                                
+                                
+                                Character Name
+                                
+                            
+                            </a>
+                            
+                            <i style="color: #cc795f; margin-top: 5px; animation-duration: 1.5s;"
+                            
+                            
+                            title="Relationship" 
+                            
+                            class="fad fa-handshake-angle fa-beat fa-fw tooltipster"></i>
+                            
+                            <!-- FA ICON == replace "handshake-angle" with other icon name -->
+                            
+                        </div>
+                        
+                        
+                        <div class="p-2 pl-lg-0 text-justify small" style="height: 128px; overflow: auto; color: #765440;">
+                            
+                            
+                        <!-- RELATIONSHIP DESCRIPTION -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio. Donec accumsan tempor lacus, et venenatis elit feugiat non. Duis porta eros et velit blandit dapibus. Curabitur ac finibus eros. Duis placerat velit vitae massa sodales, eget mattis nibh pellentesque.</p>
+                            
+                        </div>
+                        
+                    </div>
+                </div>    
+                </div>
+                
+                
+                
+                
+            <!--
+            ====================================
+                CHARACTER RELATIONSHIP BLOCK
+            ====================================
+            -->
+                <div class="carousel-item">
+                <div class="row no-gutters">
+                    
+                    
+                    <!-- CHARACTER IMAGE CARD -->
+                    <div class="col-12 col-lg-5 p-2 justify-content-center align-items-center">
+                    <div class="card p-2 border-0" style="height: 155px; width: 150px; background: #765440;">
+                        
+                        
+                    <!-- CHARACTER IMAGE -->
+                        <div class="card h-100" style=" border: solid 3px #ece4db;
+                        
+                        
+                        background-image: url(URLHERE); 
+                        background-size: cover; 
+                        background-position: center;
+                        
+                        
+                        "></div>
+                    </div>
+                    </div>
+                    
+                    
+                    
+                    <!-- NAME + INFO CARD -->
+                    <div class="col-12 col-lg p-2">
+                        
+                    <!-- CHARACTER NAME + RELATIONSHIP-->
+                        <div class="row no-gutters justify-content-between" style="font-family: Georgia, serif; font-size: 18px;">
+                            <a target="_BLANK" style="color: #cc795f;" 
+                            
+                            href="LINK_HERE">
+                                
+                                
+                                Character Name
+                                
+                            
+                            </a>
+                            
+                            <i style="color: #cc795f; margin-top: 5px; animation-duration: 1.5s;"
+                            
+                            
+                            title="Relationship" 
+                            
+                            class="fad fa-skull fa-beat fa-fw tooltipster"></i>
+                            
+                            <!-- FA ICON == replace "skull" with other icon name -->
+                            
+                        </div>
+                        
+                        
+                        <div class="p-2 pl-lg-0 text-justify small" style="height: 128px; overflow: auto; color: #765440;">
+                            
+                            
+                        <!-- RELATIONSHIP DESCRIPTION -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin elit sed tellus blandit viverra sed eget odio.</p>
+                            
+                        </div>
+                        
+                    </div>
+                </div>    
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+            <!-- ADD MORE RELATIONSHIP BLOCKS ABOVE -->
+                
+            </div>
+            </div>
+            
+        </div>
+        </div>
+        </div>
+        
+        
+        
+        
+        <!-- 
+        =====================================
+        
+               LEFT AESTHETIC BLOCK 
+        
+        =====================================
+        -->
+        <div class="card border-0 col-12 col-lg-3 mr-3 mt-3 p-2 order-2 order-lg-0" style="background: #765440; min-height: 220px;">
+            <div class="card h-100 p-2" style="border: solid 3px #ece4db;
+            
+            background-image: url(URLHERE);
+            background-size: cover;
+            background-position: bottom;">
+                
+                <div class="rounded h-100" style="border: dashed 2px #ece4db;"></div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <!-- 
+        =====================================
+        
+               CORNER AESTHETIC BLOCK 
+        
+        =====================================
+        -->
+        <div class="card border-0 col-12 col-lg-3 mt-3 p-2 order-1 order-lg-0" style="background: #765440; min-height: 220px;">
+            <div class="card h-100 p-2" style="border: solid 3px #ece4db;
+            
+            background-image: url(URLHERE);
+            background-size: cover;
+            background-position: center;">
+                
+                <div class="rounded h-100" style="border: dashed 2px #ece4db;"></div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <!-- MY CREDIT == DO NOT REMOVE -->
+        <div class="card border-0 col-12 p-1 mt-3 align-items-center order-2 order-lg-0" style="background: #ece4db;">
+            <a title="Code by ChiiAka" class="tooltipster" style="color: #cc795f;" href="https://toyhou.se/ChiiAka"><i class="fas fa-code"></i></a>
+        </div>
+    </div>
+    </div>
+    </div>
+      
