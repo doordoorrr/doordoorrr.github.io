@@ -1,3 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile </title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    /* Add your custom styles here */
+    .bubbled-shadow {
+      background: linear-gradient(135deg, #a4b3bf, #ecbfba);
+      border: transparent;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+    .bubbled-shadow p {
+      margin: 0;
+      font-size: 2rem;
+      color: white;
+    }
+    
+     .meow {
+      background: #FCFFFE;
+      border: transparent;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+    .meow p {
+      margin: 0;
+      font-size: 2rem;
+      color: white;
+    }
+  </style>
+</head>
 <body>
-    helloo
+  <div class="container">
+    <div class="card card-block text-white display-2 shadow bubbled-shadow">
+      <p><i class="far fa-heart"></i> My GitHub <i class="far fa-heart"></i></p>
+    </div>
+    <div class="card card-block mb-4 shadow bg-faded meow">
+      <div class="row justify-content-between">
+        <div class="col-lg-4">
+          <ul class="list-unstyled mb-0" style="color:#ecbfba;letter-spacing:1px;font-size:25px;letter-spacing:2px">
+            <li class="mb-2">
+              <span class="mb-0 text-uppercase">
+                username 
+              </span>
+              <span class="float-right mb-0">
+                <!-- Put Name Here -->
+                   @doordoorrr
+              </span>
+              <hr class="mt-2" style="border:1px dashed;">
+            </li>
+           
+          </ul>
+        </div>
+        <div class="col-lg-8">
+          <p class="mb-1 text-center" style="color:#ecbfba;font-size:25px;letter-spacing:2px;font-weight:400;">
+            <!-- Put Adjectives Here -->
+            Featured Projects
+          </p>
+          <!-- Paragraphs -->
+          <p class="mb-1" style="text-align:justify; color:#ecbfba;font-size:20px">- networked VR multiplayer object interaction template game <br> - HTTP server with connection handling <br> - NTP Time synch tool <br> - threaded matrix multiplication
+</p>
+          <p class="mt-4 text-center">
+            <!----------- Link 1 ----------->
+            <a href="https://github.com/doordoorrr" class="badge badge-pill display-4 tooltipster text-white" title="PUT BLURB HERE" style="background-color:#a4b3bf;font-weight:400;font-size:20px;letter-spacing:2px;padding:1px 9px 3px 9px;line-height:30px;margin:1px">
+              Github Link
+            </a>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+</html>
