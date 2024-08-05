@@ -9,7 +9,41 @@
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <style>
-    /* Add your custom styles here */
+   
+        body {
+          background-color: white;
+          color: #343a40;
+        }
+        .header {
+          background: linear-gradient(135deg, #a4b3bf, #ecbfba);
+          color: white;
+          padding: 10px 0;
+          text-align: center;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          border-radius: 0 0 15px 15px;
+        }
+        .header .title {
+          font-size: 2.5rem;
+          font-weight: 700;
+        }
+        .header .subtitle {
+          font-size: 1.3rem;
+          font-weight: 300;
+        }
+        .navbar {
+          margin-bottom: 20px;
+        }
+        .navbar .nav-link {
+          font-size: 1.2rem;
+          color: #343a40 !important;
+          margin-right: 15px;
+        }
+        .navbar .nav-link:hover {
+          color: #2575fc !important;
+        }
+        .container {
+          margin-top: 30px;
+        }
     .footer-card {
         position: fixed;
         bottom: 0;
@@ -51,6 +85,42 @@
   </style>
 </head>
 <body>
+
+  <!---HEADERRRR-->
+
+  <header class="header">
+    <div class="container">
+      <div class="title">Alexandria Burchfiel</div>
+      <div class="subtitle">Computer Science and Cybersecurity Enthusiast</div>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="https://doordoorrr.github.io/">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://doordoorrr.github.io/">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://doordoorrr.github.io/resume/resume-page.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://doordoorrr.github.io/projects/projects-page.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://doordoorrr.github.io/my-github/mygithub.html">My Github</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--END HEADER-->
+
   <div class="container">
     <div class="card card-block text-white display-2 shadow bubbled-shadow">
       <p><i class="far fa-heart"></i> My GitHub <i class="far fa-heart"></i></p>
@@ -94,5 +164,10 @@
 <!---FOOTERRRRRRRRR-->
 <p class ="footer-card mb " style="text-align:left; color:white;font-size:20px">Contact Me- diorburchfiel@gmail.com</p>
  
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>
