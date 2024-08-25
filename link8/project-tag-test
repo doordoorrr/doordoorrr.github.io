@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Alexandria Burchfiel</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    
+    body {
+        background-color: white;
+        color: #343a40;
+      }
+      .header {
+        background: linear-gradient(135deg, #a4b3bf, #ecbfba);
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 15px 15px;
+      }
+      .header .title {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+      .header .subtitle {
+        font-size: 1.3rem;
+        font-weight: 300;
+      }
+      .navbar {
+        margin-bottom: 20px;
+      }
+      .navbar .nav-link {
+        font-size: 1.2rem;
+        color: #343a40 !important;
+        margin-right: 15px;
+      }
+      .navbar .nav-link:hover {
+        color: #2575fc !important;
+      }
+      .container {
+        margin-top: 30px;
+      }
+      
+    .footer-card {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 5.5%;
+        margin: auto;
+        background: hsla(0, 100%, 30%, 0.3);
+        color: white;
+        font-size: 2rem;
+    }
+
+
+    .bubbled-shadow {
+      background: white;
+      border: transparent;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .bubbled-shadow p {
+      margin: 10;
+      font-size: 1.9rem;
+      color: #636C73;
+    }
+    
+    .meow {
+      background: #FCFFFE;
+      border: transparent;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+    .meow p {
+      margin: 10;
+      font-size: 2rem;
+      color: white;
+    }
+    .collapsible {
+        border: transparent;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px ;
+        margin-bottom: 20px;
+        cursor: pointer;
+        
+  
+        text-align: right;
+        outline: none;
+        font-size: 15px;
+      }
+  
+    
+    .active, .collapsible:hover {
+      background-color: #E8E4E5;
+    }
+
+    .collapsible:after {
+      content: '+'; 
+      font-size: 40px;
+      color: #636C73;
+      float: right;
+      margin-left: 5px;
+    }
+  
+    .active:after {
+      content: "-"; 
+    }
+    
+    /* hidden content styler */ 
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: white;
+    }
+    
+     .title-block {
+      background:  #ecbfba;
+      border: transparent;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 25px;
+      margin-bottom: 10px;
+    }
+    .title-block p {
+      margin: 0;
+      font-size: 3.5rem;
+      color: white;
+    }
+    .tags {
+        background: #f9f9f9;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 1rem;
+        color: #343a40;
+    }
+    .tags span {
+        background-color: #ecbfba;
+        color: white;
+        padding: 5px 10px;
+        margin-right: 5px;
+        border-radius: 5px;
+    }
+  </style>
+  
+</head>
+<body>
+    <!---HEADERRRR-->
+
+  <header class="header">
+    <div class="container">
+      <div class="title">Alexandria Burchfiel</div>
+      <div class="subtitle">Computer Science and Cybersecurity </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="https://doordoorrr.github.io/">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+         
+          <li class="nav-item">
+            <a class="nav-link" href="https://doordoorrr.github.io/resume/resume-page.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://doordoorrr.github.io/projects/projects-page.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://doordoorrr.github.io/my-github/mygithub.html">My Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://doordoorrr.github.io/contact-me.html"> Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--END HEADER-->
+    
+   <div class="container">
+    <div class="card card-block text-white display-2 shadow title-block ">
+      <p> Projects </p>
+    </div> 
+    <div class="tags">
+      <span class="filter-tag" data-tag="Unity"><i class="fas fa-code"></i> Unity</span>
+      <span class="filter-tag" data-tag="Game Development"><i class="fas fa-gamepad"></i> Game Development</span>
+      <span class="filter-tag" data-tag="Cybersecurity"><i class="fas fa-lock"></i> Cybersecurity</span>
+    </div>
+
+    <!-- Project Buttons with data-tag attribute -->
+    <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow" data-tags="Unity,Game Development,Cybersecurity">
+      <p> VR Networked Multiplayer Object Interaction Template Game</p>
+      <div class="tags">
+        <span><i class="fas fa-code"></i> Unity</span>
+        <span><i class="fas fa-gamepad"></i> Game Development</span>
+        <span><i class="fas fa-lock"></i> Cybersecurity</span>
+      </div>
+    </button>
+    <div class="content">
+    
+    
+    <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow">
+        <p> VR Networked Multiplayer Object Interaction Template Game</p>
+        <div class="tags">
+            <span><i class="fas fa-code"></i> Unity</span>
+            <span><i class="fas fa-gamepad"></i> Game Development</span>
+            <span><i class="fas fa-lock"></i> Cybersecurity</span>
+        </div></button> <!----------- PROJECT ONE ----------->
+    
+      <div class="content">
+        <body>
+      
+        <div class="card card-block mb-4 shadow bg-faded meow">
+          <div class="row justify-content-between">
+            <div class="col-lg-4">
+              <ul class="list-unstyled mb-0" style="color:#636C73;letter-spacing:1px;font-size:25px;letter-spacing:2px">
+                <li class="mb-2">
+                  <span class="mb-0 text-uppercase">
+                    Multiplayer Object Interaction Template VR Game
+                  </span>
+                  
+                  <hr class="mt-2" style="border:1px dashed;">
+                </li>
+               
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <!-- Paragraphs -->
+              <p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px"> This project is a Unity project. It is a networked multiplayer VR game. It also features an object interaction rig set with: a grabbable and respawnable ball, sliding scroll bar with color options determining the ball's color state, and multiple ways to interact with everything around the user. In terms of networking, the program has a UI encompassing Host and Client privledges, networked player avatars, unique player network manifestos and manager, and a unique room code generator. 
+                
+                <!--IMAGE -->
+                <img src="https://doordoorrr.github.io/projects/v-temp-obj-pic.png" alt="Object Interaction Color Scroll Wheel" width="400" height="200"/>
+               <br>
+               <iframe width="400"
+                height="300" src="https://doordoorrr.github.io/projects/vr-object-temp.mp4" alt="Hub Implementation" frameborder = "0" allowfullscreen> </iframe>
+    </p>
+              <p class="mt-4 text-center">
+                <!----------- Link 1 ----------->
+                <a href="https://github.com/doordoorrr/object-interaction-multiplayer-VR" class="badge badge-pill display-4 tooltipster text-white" title="Multiplayer Object Interaction Template VR Game" style="background-color:#ecbfba;font-weight:400;font-size:20px;letter-spacing:2px;padding:1px 9px 3px 9px;line-height:30px;margin:1px">
+                  Project Repo
+                </a>
+    
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+  
+  
+  <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow">
+    <p> System & UI/UX Design - VR Tablet Design & Implementation</p>
+     <div class="tags">
+            <span><i class="fas fa-code"></i> Unity</span>
+            <span><i class="fas fa-gamepad"></i> Game Development</span>
+            <span><i class="fas fa-lock"></i> Cybersecurity</span>
+        </div>
+        </button> <!----------- PROJECT ONE ----------->
+
+  <div class="content">
+    <body>
+  
+    <div class="card card-block mb-4 shadow bg-faded meow">
+      <div class="row justify-content-between">
+        <div class="col-lg-4">
+          <ul class="list-unstyled mb-0" style="color:#636C73;letter-spacing:1px;font-size:25px;letter-spacing:2px">
+            <li class="mb-2">
+              <span class="mb-0 text-uppercase">
+                VR Tablet System Design and UI/UX Design
+              </span>
+              
+              <hr class="mt-2" style="border:1px dashed;">
+            </li>
+           
+          </ul>
+        </div>
+        <div class="col-lg-8">
+          <!-- Paragraphs -->
+          <p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px"> This project was work related-- it entailed being assigned a task of designing a system layout, UI/UX, diagrams, code samples, and implementation for a virtual reality tablet to be used as a main interface in an application. This project was handed off to a team of developers to implement and bring to life. At this point (8/5/24) while researching there were few models and published implementations on the concept of a tablet in VR. See attatched diagrams and early implementation of the virtual tablet. This is to be used as template code to transfer across apps we will develop and deploy in the future. <img src="https://doordoorrr.github.io/projects/VR-tablet-diagram.png" alt="VR Diagram" width="300" height="200"/> 
+            <img src="https://doordoorrr.github.io/projects/VR-tablet-hub.png" alt="Hub Implementation" width="300"
+            height="200"/><iframe width="300"
+            height="200" src="https://doordoorrr.github.io/projects/tablet_prototype.mp4" alt="Hub Implementation" frameborder = "0" allowfullscreen> </iframe>
+</p>
+          <p class="mt-4 text-center">
+          
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow">
+    <p> HTTP Server with Connection Handling</p><div class="tags">
+            <span><i class="fas fa-code"></i> Unity</span>
+            <span><i class="fas fa-gamepad"></i> Game Development</span>
+            <span><i class="fas fa-lock"></i> Cybersecurity</span>
+        </div>
+    </button> <!----------- PROJECT ONE ----------->
+
+  <div class="content">
+    <body>
+  
+    <div class="card card-block mb-4 shadow bg-faded meow">
+      <div class="row justify-content-between">
+        <div class="col-lg-4">
+          <ul class="list-unstyled mb-0" style="color:#636C73;letter-spacing:1px;font-size:25px;letter-spacing:2px">
+            <li class="mb-2">
+              <span class="mb-0 text-uppercase">
+                HTTP Server with Connection Handling
+              </span>
+              
+              <hr class="mt-2" style="border:1px dashed;">
+            </li>
+           
+          </ul>
+        </div>
+        <div class="col-lg-8">
+          <!-- Paragraphs -->
+          <p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px">  This program sets up a simple HTTP server to handle incoming connections. It's a basic tool for learning about network programming and building lightweight web applications.<br><br>
+ <hr class="mt-2" style="border:1px dashed;">
+           
+            <p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px"> 
+            
+            <strong>Multithreading-- </strong>Uses pthreads for handling multiple client connections concurrently. <br><br> <strong>Connection Handling--</strong> Accepts incoming connections, processes HTTP requests, and sends responses back to clients. <br> <br><strong>HTTP Request Parsing--</strong> Parses incoming requests to extract method, URL, and protocol using sscanf(). <br> <br><strong>Custom Responses-- </strong>Constructs responses with extracted request details and a "Hello, world!" message.<br> <br><strong> Secure Sockets--</strong> Performs socket operations securely. <br><br> 
+            
+        
+</p>
+          <p class="mt-4 text-center">
+            <!----------- Link 1 ----------->
+            <a href="https://github.com/doordoorrr/HTTP-Server-with-Connection-Handling" class="badge badge-pill display-4 tooltipster text-white" title="HTTP Server with Connection Handling" style="background-color:#ecbfba;font-weight:400;font-size:20px;letter-spacing:2px;padding:1px 9px 3px 9px;line-height:30px;margin:1px">
+              Project Repo
+            </a>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow">
+    <p> Advanced NTP Time Synchronization Tool</p>
+        <div class="tags">
+            <span><i class="fas fa-code"></i> Unity</span>
+            <span><i class="fas fa-gamepad"></i> Game Development</span>
+            <span><i class="fas fa-lock"></i> Cybersecurity</span>
+        </div></button> <!----------- button ----------->
+
+  <div class="content">
+    <body>
+  
+    <div class="card card-block mb-4 shadow bg-faded meow">
+      <div class="row justify-content-between">
+        <div class="col-lg-4">
+          <ul class="list-unstyled mb-0" style="color:#636C73;letter-spacing:1px;font-size:25px;letter-spacing:2px">
+            <li class="mb-2">
+              <span class="mb-0 text-uppercase">
+                Advanced NTP Time Synchronization Tool 
+              </span>
+              
+              <hr class="mt-2" style="border:1px dashed;">
+            </li>
+           
+          </ul>
+        </div>
+        <div class="col-lg-8">
+         
+          <!-- Paragraphs -->
+          <p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px">This repository hosts a  C program engineered to synchronize the local system time with a designated Network Time Protocol (NTP) server. Through socket programming methodologies, this tool establishes a UDP socket connection to the renowned NTP server "pool.ntp.org" and orchestrates the exchange of precisely formatted NTP packets. Employing the getaddrinfo() function for dynamic address resolution, the program adeptly navigates network intricacies to ensure seamless communication with the NTP server.<br><br>
+
+Upon receiving the NTP response, the program extracts the transmitted timestamp, compensates for NTP protocol specifics, and computes the accurate time differential between the local system clock and the NTP time source. Robust error handling mechanisms safeguard against network anomalies, while  attention to protocol intricacies guarantees the reliability and precision of time synchronization.
+</p>
+          <p class="mt-4 text-center">
+            <!----------- Link 1 ----------->
+            <a href="https://github.com/doordoorrr/Advanced-NTP-Time-Synchronization-Tool" class="badge badge-pill display-4 tooltipster text-white" title=" Advanced NTP Time Synchronization Tool" style="background-color:#ecbfba;font-weight:400;font-size:20px;letter-spacing:2px;padding:1px 9px 3px 9px;line-height:30px;margin:1px">
+              Repo Link
+            </a>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow">
+    <p> Networked Multiplayer PC Game</p><div class="tags">
+            <span><i class="fas fa-code"></i> Unity</span>
+            <span><i class="fas fa-gamepad"></i> Game Development</span>
+            <span><i class="fas fa-lock"></i> Cybersecurity</span>
+        </div></button> <!----------- button ----------->
+
+  <div class="content">
+    <body>
+  
+    <div class="card card-block mb-4 shadow bg-faded meow">
+      <div class="row justify-content-between">
+        <div class="col-lg-4">
+          <ul class="list-unstyled mb-0" style="color:#636C73;letter-spacing:1px;font-size:25px;letter-spacing:2px">
+            <li class="mb-2">
+              <span class="mb-0 text-uppercase">
+                 Unity Networked Multiplayer PC Game 
+              </span>
+              
+              <hr class="mt-2" style="border:1px dashed;">
+            </li>
+           
+          </ul>
+        </div>
+        <div class="col-lg-8">
+          <!-- Paragraphs -->
+          <p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px">Developed a networked multiplayer PC game using Unity, with a custom-built networking architecture. The game supports both host and client modes, allowing multiple players to interact within the same game environment.<br><br><hr class="mt-2" style="border:1px dashed;"><p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px">
+- <strong>Network Managers: </strong>Scripted the network managers from scratch to handle the complexities of network communication, ensuring a smooth and synchronized gameplay experience for all connected players.<br>
+-<strong> Networked Objects:</strong> Implemented functionality for networked objects that can be spawned, placed, and deleted within the game. These actions are visible to and synchronized across all players in real-time.<br>
+- <strong>Multiplayer Interaction:</strong> Enabled seamless multiplayer interactions, with real-time updates on object placement and deletion, enhancing the collaborative and competitive aspects of the game.<br>
+<br><br>
+
+
+          <p class="mt-4 text-center">
+           
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+   <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow">
+    <p> Port Scanner</p><div class="tags">
+            <span><i class="fas fa-code"></i> Unity</span>
+            <span><i class="fas fa-gamepad"></i> Game Development</span>
+            <span><i class="fas fa-lock"></i> Cybersecurity</span>
+        </div></button> <!----------- PROJECT ONE ----------->
+
+  <div class="content">
+    <body>
+  
+    <div class="card card-block mb-4 shadow bg-faded meow">
+      <div class="row justify-content-between">
+        <div class="col-lg-4">
+          <ul class="list-unstyled mb-0" style="color:#636C73;letter-spacing:1px;font-size:25px;letter-spacing:2px">
+            <li class="mb-2">
+              <span class="mb-0 text-uppercase">
+                Port Scanner
+              </span>
+              
+              <hr class="mt-2" style="border:1px dashed;">
+            </li>
+           
+          </ul>
+        </div>
+        <div class="col-lg-8">
+          <!-- Paragraphs -->
+          <p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px">  This repository contains two port scanner programs, one designed for Unix-like systems and the other for Windows. Both programs demonstrate how to utilize socket programming and concurrent execution to efficiently scan multiple ports on a target host.<br><br><strong>KEY FEATURES:<br>
+          - asynch port scanning<br>
+- timeout handling<br>
+- error handling<br>
+- non-blocking sockets<br>
+- winsock API<br>
+- interactive scanning<br>
+- concurrency <br>
+- socket programming<br></strong>
+ <hr class="mt-2" style="border:1px dashed;"><p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px"> 
+          Unix System Port Scanner: The Unix-like system port scanner uses POSIX socket APIs and C++11 threading to perform asynchronous port scans. This program showcases skills in network programming, multithreading, and modern C++ techniques. 
+          
+
+           
+            <p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px"> 
+            Win Port Scanner: The Windows port scanner leverages the Windows Sockets API (Winsock) to scan ports on a target host. It demonstrates the use of non-blocking sockets and the select function to handle asynchronous connections. This program highlights proficiency in Windows-specific networking APIs and concurrency handling. 
+
+
+            
+        
+</p>
+          <p class="mt-4 text-center">
+            <!----------- Link 1 ----------->
+            <a href="https://github.com/doordoorrr/port-scanner" class="badge badge-pill display-4 tooltipster text-white" title="Port Scanner" style="background-color:#ecbfba;font-weight:400;font-size:20px;letter-spacing:2px;padding:1px 9px 3px 9px;line-height:30px;margin:1px">
+              Project Repo
+            </a>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+   <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow">
+    <p> Threaded Matrix Multiplication</p><div class="tags">
+            <span><i class="fas fa-code"></i> Unity</span>
+            <span><i class="fas fa-gamepad"></i> Game Development</span>
+            <span><i class="fas fa-lock"></i> Cybersecurity</span>
+        </div></button> <!----------- PROJECT ONE ----------->
+
+  <div class="content">
+    <body>
+  
+    <div class="card card-block mb-4 shadow bg-faded meow">
+      <div class="row justify-content-between">
+        <div class="col-lg-4">
+          <ul class="list-unstyled mb-0" style="color:#636C73;letter-spacing:1px;font-size:25px;letter-spacing:2px">
+            <li class="mb-2">
+              <span class="mb-0 text-uppercase">
+                Threaded Matrix Multiplication
+              </span>
+              
+              <hr class="mt-2" style="border:1px dashed;">
+            </li>
+           
+          </ul>
+        </div>
+        <div class="col-lg-8">
+          <!-- Paragraphs -->
+          <p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px">  The ThreadedMatrixMultiply.c file demonstrates a threaded version of the matrix multiplication program. The example is hard-coded for a 3 x 3 matrix using three threads to distribute the calculaion load. It also produced the sum of # calculations completed by all threads, with a protected mutex.
+<p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px"> 
+          
+          
+
+           
+            <p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px"> 
+          
+
+            
+        
+</p>
+          <p class="mt-4 text-center">
+            <!----------- Link 1 ----------->
+            <a href="https://github.com/doordoorrr/threaded-matrix-multiplication" class="badge badge-pill display-4 tooltipster text-white" title="Threaded Matrix Multiplication" style="background-color:#ecbfba;font-weight:400;font-size:20px;letter-spacing:2px;padding:1px 9px 3px 9px;line-height:30px;margin:1px">
+              Project Repo
+            </a>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ 
+   <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow">
+    <p> Ruby MySQL Database Interaction Script</p><div class="tags">
+            <span><i class="fas fa-code"></i> Unity</span>
+            <span><i class="fas fa-gamepad"></i> Game Development</span>
+            <span><i class="fas fa-lock"></i> Cybersecurity</span>
+        </div></button> <!----------- PROJECT ONE ----------->
+
+  <div class="content">
+    <body>
+  
+    <div class="card card-block mb-4 shadow bg-faded meow">
+      <div class="row justify-content-between">
+        <div class="col-lg-4">
+          <ul class="list-unstyled mb-0" style="color:#636C73;letter-spacing:1px;font-size:25px;letter-spacing:2px">
+            <li class="mb-2">
+              <span class="mb-0 text-uppercase">
+                Ruby MySQL Database Interaction Script
+              </span>
+              
+              <hr class="mt-2" style="border:1px dashed;">
+            </li>
+           
+          </ul>
+        </div>
+        <div class="col-lg-8">
+          <!-- Paragraphs -->
+          <p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px">  This Ruby script, facilitates communication with a MySQL database. The program is designed to connect to a MySQL server, create a database and multiple tables, insert data, and display the results. It ensures re-runnability by dropping the database if it already exists before creating a new one.
+
+
+<p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px"> 
+          
+          
+
+           
+            <p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px"> 
+          
+
+            
+        
+</p>
+          <p class="mt-4 text-center">
+            <!----------- Link 1 ----------->
+            <a href="https://github.com/doordoorrr/mySQL-ruby" class="badge badge-pill display-4 tooltipster text-white" title="Ruby MySQL Database Interaction Script" style="background-color:#ecbfba;font-weight:400;font-size:20px;letter-spacing:2px;padding:1px 9px 3px 9px;line-height:30px;margin:1px">
+              Project Repo
+            </a>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+
+<!---FOOTERRRRRRRRR-->
+<p class ="footer-card mb " style="text-align:left; color:white;font-size:20px">Contact Me- diorburchfiel@gmail.com</p>
+
+<p style = "color:white; font-size:20px;"> meowwww</p>        
+
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</div>
+<script>
+    // Function to filter projects based on the selected tag
+    function filterProjects(tag) {
+      const projects = document.querySelectorAll('.collapsible');
+      projects.forEach(project => {
+        const tags = project.getAttribute('data-tags').split(',');
+        if (tag === 'All' || tags.includes(tag)) {
+          project.style.display = 'block';
+        } else {
+          project.style.display = 'none';
+        }
+      });
+    }
+
+    // Event listener for filter tags
+    document.querySelectorAll('.filter-tag').forEach(tag => {
+      tag.addEventListener('click', () => {
+        const selectedTag = tag.getAttribute('data-tag');
+        filterProjects(selectedTag);
+      });
+    });
+
+    // Show all projects when clicking "All" tag
+    document.querySelector('.filter-tag[data-tag="All"]').addEventListener('click', () => {
+      filterProjects('All');
+    });
+  </script>
+</body>
+</html>
