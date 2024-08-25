@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,55 +9,51 @@
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <style>
-    
     body {
-        background-color: white;
-        color: #343a40;
-      }
-      .header {
-        background: linear-gradient(135deg, #a4b3bf, #ecbfba);
-        color: white;
-        padding: 10px 0;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        border-radius: 0 0 15px 15px;
-      }
-      .header .title {
-        font-size: 2.5rem;
-        font-weight: 700;
-      }
-      .header .subtitle {
-        font-size: 1.3rem;
-        font-weight: 300;
-      }
-      .navbar {
-        margin-bottom: 20px;
-      }
-      .navbar .nav-link {
-        font-size: 1.2rem;
-        color: #343a40 !important;
-        margin-right: 15px;
-      }
-      .navbar .nav-link:hover {
-        color: #2575fc !important;
-      }
-      .container {
-        margin-top: 30px;
-      }
-      
-    .footer-card {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 5.5%;
-        margin: auto;
-        background: hsla(0, 100%, 30%, 0.3);
-        color: white;
-        font-size: 2rem;
+      background-color: white;
+      color: #343a40;
     }
-
-
+    .header {
+      background: linear-gradient(135deg, #a4b3bf, #ecbfba);
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 0 0 15px 15px;
+    }
+    .header .title {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    .header .subtitle {
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+    .navbar {
+      margin-bottom: 20px;
+    }
+    .navbar .nav-link {
+      font-size: 1.2rem;
+      color: #343a40 !important;
+      margin-right: 15px;
+    }
+    .navbar .nav-link:hover {
+      color: #2575fc !important;
+    }
+    .container {
+      margin-top: 30px;
+    }
+    .footer-card {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 5.5%;
+      margin: auto;
+      background: hsla(0, 100%, 30%, 0.3);
+      color: white;
+      font-size: 2rem;
+    }
     .bubbled-shadow {
       background: white;
       border: transparent;
@@ -72,7 +67,6 @@
       font-size: 1.9rem;
       color: #636C73;
     }
-    
     .meow {
       background: #FCFFFE;
       border: transparent;
@@ -87,24 +81,19 @@
       color: white;
     }
     .collapsible {
-        border: transparent;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        padding: 20px ;
-        margin-bottom: 20px;
-        cursor: pointer;
-        
-  
-        text-align: right;
-        outline: none;
-        font-size: 15px;
-      }
-  
-    
+      border: transparent;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      text-align: right;
+      outline: none;
+      font-size: 15px;
+    }
     .active, .collapsible:hover {
       background-color: #E8E4E5;
     }
-
     .collapsible:after {
       content: '+'; 
       font-size: 40px;
@@ -112,11 +101,9 @@
       float: right;
       margin-left: 5px;
     }
-  
     .active:after {
       content: "-"; 
     }
-    
     /* hidden content styler */ 
     .content {
       padding: 0 18px;
@@ -124,8 +111,7 @@
       overflow: hidden;
       background-color: white;
     }
-    
-     .title-block {
+    .title-block {
       background:  #ecbfba;
       border: transparent;
       border-radius: 15px;
@@ -139,26 +125,40 @@
       color: white;
     }
     .tags {
-        background: #f9f9f9;
-        border-radius: 10px;
-        padding: 10px;
-        margin-bottom: 15px;
-        font-size: 1rem;
-        color: #343a40;
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 1rem;
+      color: #343a40;
     }
     .tags span {
-        background-color: #ecbfba;
-        color: white;
-        padding: 5px 10px;
-        margin-right: 5px;
-        border-radius: 5px;
+      background-color: #ecbfba;
+      color: white;
+      padding: 5px 10px;
+      margin-right: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .selected-tags {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .selected-tags span {
+      background-color: #ecbfba;
+      color: white;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
     }
   </style>
-  
 </head>
 <body>
-    <!---HEADERRRR-->
-
   <header class="header">
     <div class="container">
       <div class="title">Alexandria Burchfiel</div>
@@ -173,7 +173,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-         
           <li class="nav-item">
             <a class="nav-link" href="https://doordoorrr.github.io/resume/resume-page.html">Resume</a>
           </li>
@@ -184,55 +183,37 @@
             <a class="nav-link" href="https://doordoorrr.github.io/my-github/mygithub.html">My Github</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://doordoorrr.github.io/contact-me.html"> Contact Me</a>
+            <a class="nav-link" href="https://doordoorrr.github.io/contact-me.html">Contact Me</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!--END HEADER-->
-    
-   <div class="container">
-    <div class="card card-block text-white display-2 shadow title-block ">
-      <p> Projects </p>
+
+  <div class="container">
+    <div class="card card-block text-white display-2 shadow title-block">
+      <p>Projects</p>
     </div>
     <div class="tags">
       <span class="filter-tag" data-tag="Unity"><i class="fas fa-code"></i> Unity</span>
       <span class="filter-tag" data-tag="Game Development"><i class="fas fa-gamepad"></i> Game Development</span>
       <span class="filter-tag" data-tag="Cybersecurity"><i class="fas fa-lock"></i> Cybersecurity</span>
+      <span class="filter-tag" data-tag="C++"><i class="fas fa-lock"></i>  C++</span>
+       <span class="filter-tag" data-tag="Network Scripting"></i> Network Scripting</span>
     </div>
     
-    <!-- Project Buttons with data-tag attribute -->
-    <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow" data-tags="Unity,Game Development,Cybersecurity">
-      <p> VR Networked Multiplayer Object Interaction Template Game</p>
+    <div class="selected-tags"></div>
+
+    <!-- Projects -->
+    <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow" data-tags="Unity,Game Development,Network Scripting">
+      <p>VR Networked Multiplayer Object Interaction Template Game</p>
       <div class="tags">
         <span><i class="fas fa-code"></i> Unity</span>
         <span><i class="fas fa-gamepad"></i> Game Development</span>
-        <span><i class="fas fa-lock"></i> Cybersecurity</span>
+        <span> Network Scripting</span>
       </div>
     </button>
     <div class="content">
-      <!-- Project Content -->
-    </div>
-
-    <!-- Repeat for other projects -->
-    
-  </div>
-  
-  
-  
-  
-  
-    
-    <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow" data-tags="Unity,Game Development,Cybersecurity">
-        <p> VR Networked Multiplayer Object Interaction Template Game</p>
-          <div class="tags">
-        <span><i class="fas fa-code"></i> Unity</span>
-        <span><i class="fas fa-gamepad"></i> Game Development</span>
-        <span><i class="fas fa-lock"></i> Cybersecurity</span>
-      </div></button> <!----------- PROJECT ONE ----------->
-    
-      <div class="content">
         <body>
       
         <div class="card card-block mb-4 shadow bg-faded meow">
@@ -270,18 +251,17 @@
           </div>
         </div>
       </div>
- 
-  
-   <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow" data-tags="Unity,Game Development,Cybersecurity">
-        <p> System & UI/UX Design - VR Tablet Design & Implementation</p>
-          <div class="tags">
+
+    <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow" data-tags="Unity,Game Development,Cybersecurity">
+      <p>System & UI/UX Design - VR Tablet Design & Implementation</p>
+      <div class="tags">
         <span><i class="fas fa-code"></i> Unity</span>
         <span><i class="fas fa-gamepad"></i> Game Development</span>
         <span><i class="fas fa-lock"></i> Cybersecurity</span>
-      </div></button> <!----------- PROJECT TWO ----------->
- 
-
-  <div class="content">
+      </div>
+    </button>
+   
+   <div class="content">
     <body>
   
     <div class="card card-block mb-4 shadow bg-faded meow">
@@ -313,18 +293,17 @@
       </div>
     </div>
   </div>
-  
+   
+
     <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow" data-tags="Unity,Game Development,Cybersecurity">
-        <p>  HTTP Server with Connection Handling </p>
-          <div class="tags">
+      <p> HTTP Server with Connection Handling</p>
+      <div class="tags">
         <span><i class="fas fa-code"></i> Unity</span>
         <span><i class="fas fa-gamepad"></i> Game Development</span>
         <span><i class="fas fa-lock"></i> Cybersecurity</span>
-      </div></button> <!----------- PROJECT ONE ----------->
- 
-      
-
-  <div class="content">
+      </div>
+    </button>
+    <div class="content">
     <body>
   
     <div class="card card-block mb-4 shadow bg-faded meow">
@@ -366,15 +345,15 @@
 
 
     <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow" data-tags="Unity,Game Development,Cybersecurity">
-        <p> Advanced NTP Time Synchronization Tool </p>
-          <div class="tags">
+      <p>Advanced NTP Time Synchronization Tool</p>
+      <div class="tags">
         <span><i class="fas fa-code"></i> Unity</span>
         <span><i class="fas fa-gamepad"></i> Game Development</span>
         <span><i class="fas fa-lock"></i> Cybersecurity</span>
-      </div></button> <!----------- PROJECT ONE ----------->
- 
- 
-
+      </div>
+    </button>
+    <div class="content">
+    <body>
   
     <div class="card card-block mb-4 shadow bg-faded meow">
       <div class="row justify-content-between">
@@ -408,20 +387,10 @@ Upon receiving the NTP response, the program extracts the transmitted timestamp,
       </div>
     </div>
   </div>
-  
-  
-
-    <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow" data-tags="Unity,Game Development,Cybersecurity">
-        <p> Networked Multiplayer PC Game </p>
-          <div class="tags">
-        <span><i class="fas fa-code"></i> Unity</span>
-        <span><i class="fas fa-gamepad"></i> Game Development</span>
-        <span><i class="fas fa-lock"></i> Cybersecurity</span>
-      </div></button> <!----------- PROJECT ONE ----------->
- 
+  </div>
 
 
-  <div class="content">
+<div class="content">
     <body>
   
     <div class="card card-block mb-4 shadow bg-faded meow">
@@ -456,19 +425,63 @@ Upon receiving the NTP response, the program extracts the transmitted timestamp,
     </div>
   </div>
   
-  
-    <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow" data-tags="Game Development">
-        <p> Port Scanner </p>
-          <div class="tags">
+  <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow" data-tags="Unity,Game Development,Cybersecurity">
       
+      
+      <p>  Unity Networked Multiplayer PC Game</p>
+      <div class="tags">
+        <span><i class="fas fa-code"></i> Unity</span>
         <span><i class="fas fa-gamepad"></i> Game Development</span>
-     
-      </div></button> <!----------- PROJECT ONE ----------->
- 
+        <span><i class="fas fa-lock"></i> Cybersecurity</span>
+      </div>
+    </button>
+    
+     <div class="content">
+    <body>
+    <div class="card card-block mb-4 shadow bg-faded meow">
+      <div class="row justify-content-between">
+        <div class="col-lg-4">
+          <ul class="list-unstyled mb-0" style="color:#636C73;letter-spacing:1px;font-size:25px;letter-spacing:2px">
+            <li class="mb-2">
+              <span class="mb-0 text-uppercase">
+                 Unity Networked Multiplayer PC Game 
+              </span>
+              
+              <hr class="mt-2" style="border:1px dashed;">
+            </li>
+           
+          </ul>
+        </div>
+        <div class="col-lg-8">
+          <!-- Paragraphs -->
+          <p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px">Developed a networked multiplayer PC game using Unity, with a custom-built networking architecture. The game supports both host and client modes, allowing multiple players to interact within the same game environment.<br><br><hr class="mt-2" style="border:1px dashed;"><p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px">
+- <strong>Network Managers: </strong>Scripted the network managers from scratch to handle the complexities of network communication, ensuring a smooth and synchronized gameplay experience for all connected players.<br>
+-<strong> Networked Objects:</strong> Implemented functionality for networked objects that can be spawned, placed, and deleted within the game. These actions are visible to and synchronized across all players in real-time.<br>
+- <strong>Multiplayer Interaction:</strong> Enabled seamless multiplayer interactions, with real-time updates on object placement and deletion, enhancing the collaborative and competitive aspects of the game.<br>
+<br><br>
 
+
+          <p class="mt-4 text-center">
+           
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
   
-
-  <div class="content">
+  
+  
+  <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow" data-tags="Unity,Cybersecurity">
+      <p>Port Scanner</p>
+      <div class="tags">
+        <span><i class="fas fa-code"></i> Unity</span>
+       
+        <span><i class="fas fa-lock"></i> Cybersecurity</span>
+      </div>
+    </button>
+    
+    <div class="content">
     <body>
   
     <div class="card card-block mb-4 shadow bg-faded meow">
@@ -520,18 +533,15 @@ Upon receiving the NTP response, the program extracts the transmitted timestamp,
     </div>
   </div>
   
-  
-    
-    <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow" data-tags="Unity,Game Development,Cybersecurity">
-        <p>Threaded Matrix Multiplication </p>
-          <div class="tags">
+    <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow" data-tags="Unity,Cybersecurity">
+      <p>Threaded Matrix Multiplication</p>
+      <div class="tags">
+        <span><i class="fas fa-code"></i> Unity</span>
        
-        <span><i class="fas fa-gamepad"></i> Game Development</span>
         <span><i class="fas fa-lock"></i> Cybersecurity</span>
-      </div></button> <!----------- PROJECT ONE ----------->
-
-
-  <div class="content">
+      </div>
+    </button>
+<div class="content">
     <body>
   
     <div class="card card-block mb-4 shadow bg-faded meow">
@@ -573,17 +583,15 @@ Upon receiving the NTP response, the program extracts the transmitted timestamp,
       </div>
     </div>
   </div>
- 
- 
- 
-     <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow" data-tags="Unity">
-        <p> Ruby MySQL Database Interaction Script </p>
-          <div class="tags">
-        <span><i class="fas fa-code"></i> Unity</span>
    
-      </div></button> <!----------- PROJECT ONE ----------->
-
-
+  <button type="button" class="collapsible container card card-block text-white display-2 shadow bubbled-shadow" data-tags="Unity,Cybersecurity">
+      <p> Ruby MySQL Database Interaction Script</p>
+      <div class="tags">
+        <span><i class="fas fa-code"></i> Unity</span>
+       
+        <span><i class="fas fa-lock"></i> Cybersecurity</span>
+      </div>
+    </button>
   <div class="content">
     <body>
   
@@ -628,65 +636,69 @@ Upon receiving the NTP response, the program extracts the transmitted timestamp,
       </div>
     </div>
   </div>
+  
+  
+  <!-- Footer Card -->
+  <div class="footer-card text-center">
+    Alexandria Burchfiel © 2024
+  </div>
 
+  <!-- JavaScript -->
   <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+    document.addEventListener('DOMContentLoaded', function () {
+      var coll = document.getElementsByClassName("collapsible");
+      for (let i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
 
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    }
-  </script>
+      const filterTags = document.querySelectorAll('.filter-tag');
+      const selectedTagsContainer = document.querySelector('.selected-tags');
+      let selectedTag = null;
 
+      filterTags.forEach(tag => {
+        tag.addEventListener('click', function () {
+          const tagText = this.dataset.tag;
 
-<!---FOOTERRRRRRRRR-->
-<p class ="footer-card mb " style="text-align:left; color:white;font-size:20px">Contact Me- diorburchfiel@gmail.com</p>
+          // If the tag is already selected, clear the selection
+          if (selectedTag === tagText) {
+            selectedTag = null;
+            selectedTagsContainer.innerHTML = ''; // Clear the selected tags display
 
-<p style = "color:white; font-size:20px;"> meowwww</p>        
+            // Show all projects
+            document.querySelectorAll('.collapsible').forEach(project => {
+              project.style.display = 'block';
+            });
 
+          } else {
+            // Clear any previously selected tag
+            selectedTag = tagText;
+            selectedTagsContainer.innerHTML = ''; // Clear previous tag display
 
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            const tagSpan = document.createElement('span');
+            tagSpan.textContent = tagText;
+            selectedTagsContainer.appendChild(tagSpan);
 
-</div>
-<script>
-    // Function to filter projects based on the selected tag
-    function filterProjects(tag) {
-      const projects = document.querySelectorAll('.collapsible');
-      projects.forEach(project => {
-        const tags = project.getAttribute('data-tags').split(',');
-        if (tag === 'All' || tags.includes(tag)) {
-          project.style.display = 'block';
-        } else {
-          project.style.display = 'none';
-        }
-      });
-    }
-
-    // Event listener for filter tags
-    document.querySelectorAll('.filter-tag').forEach(tag => {
-      tag.addEventListener('click', () => {
-        const selectedTag = tag.getAttribute('data-tag');
-        filterProjects(selectedTag);
+            // Filter projects based on the selected tag
+            document.querySelectorAll('.collapsible').forEach(project => {
+              const projectTags = project.getAttribute('data-tags').split(',');
+              if (projectTags.includes(tagText)) {
+                project.style.display = 'block';
+              } else {
+                project.style.display = 'none';
+              }
+            });
+          }
+        });
       });
     });
-
-    // Show all projects when clicking "All" tag
-    document.querySelector('.filter-tag[data-tag="All"]').addEventListener('click', () => {
-      filterProjects('All');
-    });
   </script>
-</body>
-</html>
 </body>
 </html>
