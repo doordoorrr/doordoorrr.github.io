@@ -678,6 +678,16 @@ Upon receiving the NTP response, the program extracts the transmitted timestamp,
           const tagText = this.dataset.tag;
 
           // If the tag is already selected, clear the selection
+          if (selectedTag === selectedTag) {
+            
+            selectedTagsContainer.innerHTML = ''; // Clear the selected tags display
+
+            // Show all projects
+            document.querySelectorAll('.collapsible').forEach(project => {
+              project.style.display = 'block';
+            });
+
+          }
           if (selectedTag === tagText) {
             selectedTag = null;
             selectedTagsContainer.innerHTML = ''; // Clear the selected tags display
