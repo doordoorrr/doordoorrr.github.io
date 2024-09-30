@@ -667,11 +667,11 @@ Upon receiving the NTP response, the program extracts the transmitted timestamp,
             content.style.display = "block";
           }
         });
-      }
+      }  
 
 //does this const contain a list of strings ?? need be array ??
       const filterTags = document.querySelectorAll('.filter-tag'); //querySelectorAll returns staic node list w/ list of doc elm that match querySelectorAll(selectors)
-      const  selectedTagsContainer = [document.querySelector('.selected-tags')];
+      const  selectedTagsContainer = document.querySelector('.selected-tags');
       let selectedTag = null;
 
       filterTags.forEach(tag => {
