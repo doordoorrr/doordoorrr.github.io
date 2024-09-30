@@ -650,7 +650,11 @@ Upon receiving the NTP response, the program extracts the transmitted timestamp,
   </div>
 
   <!-- JavaScript -->
+
+  class="filter-tag" 
   <script>
+//class="filter-tag" to selected tags as well 
+
     document.addEventListener('DOMContentLoaded', function () {
       var coll = document.getElementsByClassName("collapsible");
       for (let i = 0; i < coll.length; i++) {
@@ -665,12 +669,15 @@ Upon receiving the NTP response, the program extracts the transmitted timestamp,
         });
       }
 
-      const filterTags = document.querySelectorAll('.filter-tag');
-      const selectedTagsContainer = document.querySelector('.selected-tags');
+//does this const contain a list of strings ?? need be array ??
+      const filterTags = document.querySelectorAll('.filter-tag'); //querySelectorAll returns staic node list w/ list of doc elm that match querySelectorAll(selectors)
+      const  selectedTagsContainer = [document.querySelector('.selected-tags')];
       let selectedTag = null;
 
       filterTags.forEach(tag => {
         tag.addEventListener('click', function () {
+          
+          //const -> array 
           const tagText = this.dataset.tag;
 
           // If the tag is already selected, clear the selection
