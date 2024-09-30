@@ -691,14 +691,18 @@ Upon receiving the NTP response, the program extracts the transmitted timestamp,
             });
 
           } else {
-            // Clear any previously selected tag
+
+            /*
+   // Clear any previously selected tag
             selectedTag = tagText;
             selectedTagsContainer.innerHTML = ''; // Clear previous tag display
 
             const tagSpan = document.createElement('span');
             tagSpan.textContent = tagText;
             selectedTagsContainer.appendChild(tagSpan);
-
+            
+            */
+         
             // Filter projects based on the selected tag
             document.querySelectorAll('.collapsible').forEach(project => {
               const projectTags = project.getAttribute('data-tags').split(',');
