@@ -10,7 +10,101 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <style>
   /*background: linear-gradient(135deg, #a4b3bf, #ecbfba);*/
-  
+  /* Footer Styles */
+footer {
+  background-color: #ecbfba; /* Soft pink background */
+  color: #333; /* Dark text color for contrast */
+  padding: 10px 0; /* Ample padding */
+  border-top: 4px solid #a4b3bf; /* Border in a muted teal color */
+}
+
+.container {
+  width: 90%; /* Responsive container width */
+  max-width: 1200px; /* Max width */
+  margin: 0 auto; /* Center the container */
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center vertically */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.logo img {
+  max-height: 170px; /* Logo height */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.menu-footer-nav-container {
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.footer-nav {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex; /* Display inline */
+}
+
+.menu-item {
+  margin-right: 25px; /* Space between menu items */
+}
+
+.menu-item a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Dark text color */
+  font-weight: 500; /* Medium weight for readability */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.menu-item a:hover {
+  color: #a4b3bf; /* Change color on hover */
+}
+
+.social-links {
+  display: flex; /* Display inline */
+}
+
+.social-links a {
+  margin-right: 25px; /* Space between social links */
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Dark text color */
+  font-weight: 500; /* Medium weight */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-links a:hover {
+  color: #a4b3bf; /* Change color on hover */
+}
+
+.legal {
+  text-align: center; /* Center the legal text */
+  margin-top: 20px; /* Space above legal text */
+  font-size: 0.9em; /* Smaller font size */
+  color: #666; /* Lighter gray for legal text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .footer-nav {
+    flex-wrap: wrap; /* Allow wrapping of menu items */
+  }
+
+  .menu-item {
+    margin-right: 15px; /* Less space between items */
+  }
+
+  .social-links {
+    margin-top: 10px; /* Space between links and menu */
+  }
+}
+
     body {
       background-color: white;
       color: #343a40;
@@ -167,8 +261,24 @@
       </div>
     </div>
   </div>
-<!---FOOTERRRRRRRRR-->
-<p class ="footer-card mb " style="text-align:left; color:white;font-size:20px">Contact Me- diorburchfiel@gmail.com</p>
+<footer>
+  <div class="container">
+    <div class="content-wrapper">
+      <a class="logo" href="https://doordoorrr.github.io/link8/Design.png">
+        <img src="https://doordoorrr.github.io/link8/Design.png" alt="Your Logo" />
+      </a>
+
+    
+
+      <div class="social-links">
+        <a href="https://doordoorrr.github.io/resume/resume-page.html"><i class="icon-instagram"></i>Resume</a>
+        <a href="https://doordoorrr.github.io/projects/projects-page.html"><i class="icon-facebook"></i>Projects</a>
+        <a href="https://doordoorrr.github.io/contact-me.html"></i> Contact Me</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
 
 
 <!-- Scripts -->
