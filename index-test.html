@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cutesy CS Portfolio - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .sprinkle {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        body {
+            font-size: 16px;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                font-size: 18px;
+            }
+
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.25rem;
+            }
+
+            .text-3xl {
+                font-size: 1.875rem;
+            }
+
+            .text-2xl {
+                font-size: 1.5rem;
+            }
+
+            .text-xl {
+                font-size: 1.25rem;
+            }
+
+            .text-lg {
+                font-size: 1.125rem;
+            }
+
+            .text-sm {
+                font-size: 0.875rem;
+            }
+
+            .text-xs {
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-pink-100">
+    <!-- Sprinkle Header -->
+    <div id="sprinkleHeader" class="h-8 bg-pink-200 relative overflow-hidden"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-pink-300 p-4 relative">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold text-white">Cutesy CS Portfolio</div>
+            <div class="hidden md:flex items-center justify-end space-x-4 flex-grow">
+                <a href="index.html" class="flex items-center space-x-1 text-white hover:text-pink-100 transition duration-150 ease-in-out">
+                    <i data-lucide="home" class="w-4 h-4"></i>
+                    <span>Home</span>
+                </a>
+                <a href="resume.html" class="flex items-center space-x-1 text-white hover:text-pink-100 transition duration-150 ease-in-out">
+                    <i data-lucide="file-text" class="w-4 h-4"></i>
+                    <span>Resume</span>
+                </a>
+                <a href="projects.html" class="flex items-center space-x-1 text-white hover:text-pink-100 transition duration-150 ease-in-out">
+                    <i data-lucide="code" class="w-4 h-4"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#" class="flex items-center space-x-1 text-white hover:text-pink-100 transition duration-150 ease-in-out">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span>My GitHub</span>
+                </a>
+                <a href="#" class="flex items-center space-x-1 text-white hover:text-pink-100 transition duration-150 ease-in-out">
+                    <i data-lucide="mail" class="w-4 h-4"></i>
+                    <span>Contact Me</span>
+                </a>
+                <a href="#" class="flex items-center space-x-1 text-white hover:text-pink-100 transition duration-150 ease-in-out">
+                    <i data-lucide="briefcase" class="w-4 h-4"></i>
+                    <span>Experience</span>
+                </a>
+                <a href="#" class="flex items-center space-x-1 text-white hover:text-pink-100 transition duration-150 ease-in-out">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    <span>Skills</span>
+                </a>
+            </div>
+            <button id="menuToggle" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6 text-white"></i>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2 absolute right-0 top-full bg-pink-300 p-4 rounded-bl-lg shadow-lg z-10">
+            <a href="index.html" class="flex items-center space-x-1 text-white hover:text-pink-100 transition duration-150 ease-in-out">
+                <i data-lucide="home" class="w-4 h-4"></i>
+                <span>Home</span>
+            </a>
+            <a href="resume.html" class="flex items-center space-x-1 text-white hover:text-pink-100 transition duration-150 ease-in-out">
+                <i data-lucide="file-text" class="w-4 h-4"></i>
+                <span>Resume</span>
+            </a>
+            <a href="projects.html" class="flex items-center space-x-1 text-white hover:text-pink-100 transition duration-150 ease-in-out">
+                <i data-lucide="code" class="w-4 h-4"></i>
+                <span>Projects</span>
+            </a>
+            <a href="#" class="flex items-center space-x-1 text-white hover:text-pink-100 transition duration-150 ease-in-out">
+                <i data-lucide="github" class="w-4 h-4"></i>
+                <span>My GitHub</span>
+            </a>
+            <a href="#" class="flex items-center space-x-1 text-white hover:text-pink-100 transition duration-150 ease-in-out">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+                <span>Contact Me</span>
+            </a>
+            <a href="#" class="flex items-center space-x-1 text-white hover:text-pink-100 transition duration-150 ease-in-out">
+                <i data-lucide="briefcase" class="w-4 h-4"></i>
+                <span>Experience</span>
+            </a>
+            <a href="#" class="flex items-center space-x-1 text-white hover:text-pink-100 transition duration-150 ease-in-out">
+                <i data-lucide="sparkles" class="w-4 h-4"></i>
+                <span>Skills</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-4 sm:px-6 lg:px-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-pink-600 mb-4 sm:mb-6">About Me</h1>
+        <div class="bg-pink-200 rounded-lg shadow-lg p-4 sm:p-6 relative overflow-hidden">
+            <!-- Retro Computer Window Overlay -->
+            <div class="absolute inset-0 border-4 sm:border-8 border-pink-300 rounded-lg pointer-events-none">
+                <div class="absolute top-0 left-0 right-0 h-6 sm:h-8 bg-gradient-to-r from-pink-400 to-pink-300 flex items-center justify-between px-2 sm:px-4">
+                    <div class="flex items-center">
+                        <i data-lucide="heart" class="w-4 h-4 text-red-400 mr-2"></i>
+                        <i data-lucide="heart" class="w-4 h-4 text-yellow-400 mr-2"></i>
+                        <i data-lucide="heart" class="w-4 h-4 text-green-400 mr-2"></i>
+                        <div class="ml-2 text-white font-bold">About_Me.exe</div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="minimize-2" class="w-4 h-4 text-white"></i>
+                        <i data-lucide="maximize-2" class="w-4 h-4 text-white"></i>
+                        <i data-lucide="x" class="w-4 h-4 text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 sm:mt-8 bg-white rounded p-3 sm:p-4 border-2 border-pink-300 shadow-inner">
+                <p class="text-lg text-gray-700 mb-4">
+                    Hello there! 👋 I'm a passionate computer scientist with a love for all things cute and coding. My journey in
+                    the world of technology is filled with colorful algorithms, adorable data structures, and kawaii coding
+                    projects.
+                </p>
+                <p class="text-lg text-gray-700 mb-4">
+                    When I'm not busy debugging with my trusty rubber duck 🐤, you can find me creating pixel art 👾, attending
+                    virtual tea parties with my favorite IDEs ☕, or dreaming up the next big app that'll make the digital world a
+                    cuter place.
+                </p>
+                <p class="text-lg text-gray-700">
+                    Let's connect and create some magical code together! Don't forget to check out my projects and drop me a
+                    line. Remember, in my world, every bug is just a misunderstood feature waiting to be loved. 💖
+                </p>
+            </div>
+        </div>
+        <!-- Kawaii Desktop Icons -->
+        <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="flex flex-col items-center justify-center bg-white bg-opacity-50 rounded-lg p-4 hover:bg-opacity-75 transition-all duration-300 cursor-pointer">
+                <i data-lucide="code" class="w-8 h-8 text-pink-500"></i>
+                <span class="mt-2 text-sm font-medium text-gray-700">My Projects</span>
+            </div>
+            <div class="flex flex-col items-center justify-center bg-white bg-opacity-50 rounded-lg p-4 hover:bg-opacity-75 transition-all duration-300 cursor-pointer">
+                <i data-lucide="file-text" class="w-8 h-8 text-blue-500"></i>
+                <span class="mt-2 text-sm font-medium text-gray-700">Resume.doc</span>
+            </div>
+            <div class="flex flex-col items-center justify-center bg-white bg-opacity-50 rounded-lg p-4 hover:bg-opacity-75 transition-all duration-300 cursor-pointer">
+                <i data-lucide="mail" class="w-8 h-8 text-purple-500"></i>
+                <span class="mt-2 text-sm font-medium text-gray-700">Contact Me</span>
+            </div>
+            <div class="flex flex-col items-center justify-center bg-white bg-opacity-50 rounded-lg p-4 hover:bg-opacity-75 transition-all duration-300 cursor-pointer">
+                <i data-lucide="github" class="w-8 h-8 text-gray-700"></i>
+                <span class="mt-2 text-sm font-medium text-gray-700">GitHub</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-pink-200 p-3 sm:p-4 border-t-4 border-pink-300">
+        <div class="container mx-auto flex flex-col items-center">
+            <div class="flex flex-wrap justify-center gap-2 mb-4">
+                <a href="index.html" class="flex items-center space-x-1 text-pink-600 hover:text-pink-700 transition duration-150 ease-in-out p-2">
+                    <i data-lucide="home" class="w-4 h-4"></i>
+                    <span>Home</span>
+                </a>
+                <a href="resume.html" class="flex items-center space-x-1 text-pink-600 hover:text-pink-700 transition duration-150 ease-in-out p-2">
+                    <i data-lucide="file-text" class="w-4 h-4"></i>
+                    <span>Resume</span>
+                </a>
+                <a href="projects.html" class="flex items-center space-x-1 text-pink-600 hover:text-pink-700 transition duration-150 ease-in-out p-2">
+                    <i data-lucide="code" class="w-4 h-4"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#" class="flex items-center space-x-1 text-pink-600 hover:text-pink-700 transition duration-150 ease-in-out p-2">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="#" class="flex items-center space-x-1 text-pink-600 hover:text-pink-700 transition duration-150 ease-in-out p-2">
+                    <i data-lucide="mail" class="w-4 h-4"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            <div class="text-pink-600 text-sm">
+                Made with <i data-lucide="heart" class="w-4 h-4 inline-block text-red-500"></i> and lots of <i data-lucide="star" class="w-4 h-4 inline-block text-yellow-400"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Create sprinkles
+        const sprinkleHeader = document.getElementById('sprinkleHeader');
+        for (let i = 0; i < 50; i++) {
+            const sprinkle = document.createElement('div');
+            sprinkle.className = 'sprinkle';
+            sprinkle.style.backgroundColor = Math.random() > 0.5 ? '#FFC0CB' : '#ADD8E6';
+            sprinkle.style.left = `${Math.random() * 100}%`;
+            sprinkle.style.top = `${Math.random() * 100}%`;
+            sprinkle.style.transform = `rotate(${Math.random() * 360}deg)`;
+            sprinkleHeader.appendChild(sprinkle);
+        }
+    </script>
+</body>
+</html>
