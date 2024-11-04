@@ -219,13 +219,21 @@
                 title: " Networked Multiplayer PC Game",
                 description: " Advanced NTP Time Synchronization Tool",
                 tags: ["Unity", "VR/XR", "Networking", "Server","C#"],
-                details: "Developed a networked multiplayer PC game using Unity, with a custom-built networking architecture. The game supports both host and client modes, allowing multiple players to interact within the same game environment.<br><br><hr class="mt-2" style="border:1px dashed;"><p class="mb-1" style="text-align:justify; color:#636C73;font-size:20px">
+                details: "Developed a networked multiplayer PC game using Unity, with a custom-built networking architecture. The game supports both host and client modes, allowing multiple players to interact within the same game environment.<br><br>
 - <strong>Network Managers: </strong>Scripted the network managers from scratch to handle the complexities of network communication, ensuring a smooth and synchronized gameplay experience for all connected players.<br>
 -<strong> Networked Objects:</strong> Implemented functionality for networked objects that can be spawned, placed, and deleted within the game. These actions are visible to and synchronized across all players in real-time.<br>
 - <strong>Multiplayer Interaction:</strong> Enabled seamless multiplayer interactions, with real-time updates on object placement and deletion, enhancing the collaborative and competitive aspects of the game.<br>
 <br><br>"
             },
+            {
+                id: 4,
+                title: "Port Scanner",
+                description: " Unity Networked Multiplayer PC Game ",
+                tags: ["Unity", "VR/XR", "Networking", "Server","C#"],
+                details: "This repository hosts a  C program engineered to synchronize the local system time with a designated Network Time Protocol (NTP) server. Through socket programming methodologies, this tool establishes a UDP socket connection to the renowned NTP server 'pool.ntp.org' and orchestrates the exchange of precisely formatted NTP packets. Employing the getaddrinfo() function for dynamic address resolution, the program adeptly navigates network intricacies to ensure seamless communication with the NTP server. Upon receiving the NTP response, the program extracts the transmitted timestamp, compensates for NTP protocol specifics, and computes the accurate time differential between the local system clock and the NTP time source. Robust error handling mechanisms safeguard against network anomalies, while  attention to protocol intricacies guarantees the reliability and precision of time synchronization."
+            },
         ];
+        
 
         let selectedTags = [];
         const allTags = Array.from(new Set(projects.flatMap(project => project.tags)));
