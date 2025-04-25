@@ -289,11 +289,18 @@ populate pictures
                 id: 12,
                 title: "TCP Packet Handler",
                 description: "TCP Packet Communication System with Dynamic Payload Handling and Server Response",
-                tags: ["Networking", "Server", "Python", "Socket Programming", "APIs", "Multithreading", "CyberSec", "System Design", "Linux"],
+                tags: ["Networking", "Server", "Python", "Socket-programming", "APIs", "Multithreading", "CyberSec", "System Design", "Linux", "Backend"],
                 details: "This project implements a client-server communication system using TCP sockets. The server listens for incoming connections, receives a custom packet containing a versioned header and various payload types (integer, float, or string), unpacks the packet, and sends a summary response back to the client. The client constructs the packet, based on user input via command-line arguments, and sends it to the server for processing. The system demonstrates the use of the struct module for binary data manipulation and offers a clear example of packet creation and handling in a networked environment."
             },
             {
                 id: 13,
+                title: "TCP Client-Server Command Protocol with Logging",
+                description: "TCP Client-Server Communication System with Command Handling and Logging in Python",
+                tags: ["Networking", "Server", "Python", "Socket-programming", "APIs", "Multithreading", "CyberSec", "System Design", "Linux", "Backend"],
+                details: "This project implements a client-server communication system where the client sends specific commands (such as 'LIGHTON' or 'LIGHTOFF') to the server. The server processes these commands and responds with status messages. The system uses a custom protocol, logging for tracking activities, and multi-threading to handle multiple client connections concurrently. Project Details: <br>Client-Side: The client connects to the server, sends a command (e.g., 'HELLO', 'LIGHTON', 'LIGHTOFF'), and waits for the server's response. It also logs the communication events for traceability.<br>Server-Side: The server accepts incoming client connections, processes the messages based on the custom protocol, and sends appropriate responses back to the client. It logs all interactions, including received data, commands, and responses.<br>Protocol: The communication protocol consists of a 12-byte header (including version, message type, and payload length), followed by the payload (message).<br>Multi-threading: The server is designed to handle multiple client connections concurrently by using separate threads for each client.<br>Logging: Both the client and server have logging set up to track sent and received messages, errors, and the status of operations."
+            },
+            {
+                id: 14,
                 title: "This Website ;P",
                 description: "Can't forget this is one of my projects!",
                 tags: ["HTML", "JavaScript", "Frontend", "Personal Project"],
