@@ -1,3 +1,10 @@
+/*
+TODO:
+put respective links to GITHUB for each project 
+update & condense tags
+populate pictures
+
+*/
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -232,7 +239,7 @@
                 id: 5,
                 title: "Threaded Matrix Multiplication",
                 description: "Threaded Matrix Multiplication",
-                tags: ["Networking", "Server", "Cybersec","Multithreading", "C", "Backend"],
+                tags: ["Networking", "Server", "CybeSec","Multithreading", "C", "Backend"],
                 details: "The ThreadedMatrixMultiply.c file demonstrates a threaded version of the matrix multiplication program. The example is hard-coded for a 3 x 3 matrix using three threads to distribute the calculaion load. It also produced the sum of # calculations completed by all threads, with a protected mutex."
             },
             {
@@ -275,11 +282,18 @@
                 id: 11,
                 title: "Unix Shell",
                 description: "Custom Command Line Interpreter",
-                tags: ["C", "project management", "Backend", "Linux" ],
-                details: "The project was developed for a systems programming class and emphasized working close to the OS. One key challenge was ensuring reliable parsing and forking of child processes, especially when commands were chained with & or output redirection > was used incorrectly. We emphasized clear error reporting and robust memory management throughout.  <strong>Demo: Terminal-only application — runs interactively or with script files. </strong>"
+                tags: ["C", "Project Management", "Backend", "Linux", "Systems Programming", "OS"],
+                details: "A lightweight Unix shell written in C that mimics basic Bash behavior. It supports built-in commands (cd, exit, path, and wait), command parsing, output redirection, and simultaneous execution using &. Error handling and path resolution are built in, using standard system calls like fork, execv, and dup2. The project was developed for a systems programming class and emphasized working close to the OS. One key challenge was ensuring reliable parsing and forking of child processes, especially when commands were chained with & or output redirection > was used incorrectly. We emphasized clear error reporting and robust memory management throughout.  <strong>Demo: Terminal-only application — runs interactively or with script files. </strong>"
             },
             {
                 id: 12,
+                title: "TCP Packet Handler",
+                description: "TCP Packet Communication System with Dynamic Payload Handling and Server Response",
+                tags: ["Networking", "Server", "Python", "Socket Programming", "C++", "APIs", "Multithreading", "CyberSec", "System Design"],
+                details: "This project implements a client-server communication system using TCP sockets. The server listens for incoming connections, receives a custom packet containing a versioned header and various payload types (integer, float, or string), unpacks the packet, and sends a summary response back to the client. The client constructs the packet, based on user input via command-line arguments, and sends it to the server for processing. The system demonstrates the use of the struct module for binary data manipulation and offers a clear example of packet creation and handling in a networked environment."
+            },
+            {
+                id: 13,
                 title: "This Website ;P",
                 description: "Can't forget this is one of my projects!",
                 tags: ["HTML", "JavaScript", "Frontend", "Personal Project"],
